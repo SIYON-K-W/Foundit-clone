@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* style universal */
+* {
+	scrollbar-color: #6e00be #f6f6f6;
+	scrollbar-width: thin;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

@@ -1,0 +1,61 @@
+[
+	{
+		"imgsource": "/src/assets/images/jdlogo.gif",
+		"id": 1,
+		"job": "react architect",
+		"company": "Synechron Technologies Private Limited",
+		"time": "full time",
+		"locaton": "chennai",
+		"experience": "10-18 years",
+		"skills": [
+			"react architect",
+			"react js architect",
+			"reactJS architect"
+		],
+		"posted": "a day ago",
+		"somepriority": ["early applicant", "quick apply"],
+		"jobdescription": [
+			{
+				"type": "b",
+				"data": [
+					"Job Title : Murex Test Engineer",
+					"Skills : Murex + (MxTest / Mx Test / ONYX)",
+					"Experience : 7 - 14 Years",
+					"Job Location: Bangalore (BCIT)"
+				]
+			},
+			{}
+		]
+	},
+	{
+		"imgsource": "",
+		"id": 1,
+		"job": "react architect",
+		"company": "Synechron Technologies Private Limited",
+		"time": "full time",
+		"locaton": "chennai",
+		"experience": "10-18 years",
+		"skills": [
+			"react architect",
+			"react js architect",
+			"reactJS architect"
+		],
+		"posted": "a day ago",
+		"somepriority": ["early applicant"]
+	},
+	{
+		"id": 1,
+		"job": "react architect",
+		"company": "Synechron Technologies Private Limited",
+		"time": "full time",
+		"locaton": "chennai",
+		"experience": "10-18 years",
+		"skills": [
+			"react architect",
+			"react js architect",
+			"reactJS architect"
+		],
+		"posted": "a day ago",
+		"somepriority": ["early applicant"]
+	}
+]
