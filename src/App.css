@@ -75,3 +75,16 @@
 	border-top: 12px solid transparent;
 	border-bottom: 12px solid transparent;
 }
+
+#password {
+	background-image: url(../src//assets/images/mobile_button-31-512.jpg);
+	background-position: 97% 50%;
+	background-repeat: no-repeat;
+	background-size: 25px;
+}
+.just {
+	background: black;
+	transform: rotate(44deg);
+	top: 45%;
+	right: 4%;
+}

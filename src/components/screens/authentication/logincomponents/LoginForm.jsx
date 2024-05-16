@@ -3,28 +3,36 @@ import React, { useState } from "react";
 import { useLog } from "../../../context/Logincontext";
 import { Logedata } from "../../../helpers/AxiosUrl";
 import { useLocation, useNavigate } from "react-router-dom";
+import PasswordInput from "../../../general/usefullitems/PasswordInput";
 
 function LoginForm() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [emailcorrect, setEmailCorrect] = useState(true);
-	const [passcorrect, setPassCorrect] = useState(false);
 	const [error, setError] = useState("");
+	const [passcorrect, setPassCorrect] = useState(false);
 	const { logined, HandleLogin } = useLog();
 	const location = useLocation();
 	const statepath = location.state;
 	const navigate = useNavigate();
-	const Tocheck = () => {
-		const emailRegex =
-			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		setEmailCorrect(emailRegex.test(email));
-	};
 	const iscorrect = () => {
 		if (!password) {
 			setPassCorrect(true);
 		} else {
 			setPassCorrect(false);
 		}
+	};
+	const Passnd = {
+		password,
+		setPassword,
+		setPassCorrect,
+		passcorrect,
+		iscorrect,
+	};
+	const Tocheck = () => {
+		const emailRegex =
+			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		setEmailCorrect(emailRegex.test(email));
 	};
 	const Handlesubmit = (event) => {
 		event.preventDefault();
@@ -37,6 +45,7 @@ function LoginForm() {
 		})
 			.then((response) => {
 				const data = response.data;
+				console.log(data);
 				localStorage.setItem("userdata", JSON.stringify(data));
 				HandleLogin({ type: "Login", payload: data });
 				statepath ? navigate(statepath) : navigate("/");
@@ -81,28 +90,9 @@ function LoginForm() {
 					className="font-custom1 text-xs text-[#1d1934]">
 					Password
 				</label>
-				<div className="flex gap-1 flex-col">
-					<input
-						type="password"
-						name="password"
-						id="password"
-						value={password}
-						placeholder="Enter your Password"
-						className="font-custom1 text-sm border p-3 rounded-lg outline-none"
-						required
-						onChange={(e) => setPassword(e.target.value)}
-						onBlur={() => iscorrect()}
-					/>
-					{passcorrect ? (
-						<p className="text-xs font-custom1 text-red-600 capitalize">
-							please enter your password
-						</p>
-					) : (
-						""
-					)}
-				</div>
+				<PasswordInput action={Passnd} />
 				{error ? (
-					<p className="text-xs font-custom1 text-red-600 capitalize">
+					<p className="text-xs font-custom1 text-red-600 capitalize self-center">
 						{error}
 					</p>
 				) : (
