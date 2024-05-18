@@ -3,11 +3,34 @@ import item from "../../../helpers/data.json";
 import CardTop from "./cardparts/CardTop";
 import CardMiddle from "./cardparts/CardMiddle";
 import CardBottom from "./cardparts/CardBottom";
-function Card() {
+function Card({ setID }) {
+	const handle = (id, index) => {
+		const cards = document.getElementsByClassName("card");
+		const Activecard = document.getElementsByClassName("activecard");
+
+		const Activecardarray = [...Activecard];
+		const Cardarray = [...cards];
+
+		Activecardarray.map((Element) => Element.classList.add("hidden"));
+		Activecardarray.map((Element, i) => {
+			if (index === i) {
+				Element.classList.remove("hidden");
+				Cardarray[i].classList.add("border-[#6e00be]");
+				Cardarray[i].classList.add("bg-[#FCFAFE]");
+			} else {
+				Element.classList.add("hidden");
+				Cardarray[i].classList.remove("border-[#6e00be]");
+				Cardarray[i].classList.remove("bg-[#FCFAFE]");
+			}
+		});
+		setID(id);
+	};
 	return (
 		<div className="w-2/5 flex flex-col gap-5">
-			{item.map((Element) => (
-				<div className="py-5 flex flex-col border rounded-2xl shadow-md gap-4 border-[#6e00be]">
+			{item.map((Element, index) => (
+				<div
+					className="py-5 flex flex-col border rounded-2xl shadow-md gap-4 card cursor-pointer"
+					onClick={() => handle(Element.id, index)}>
 					<CardTop
 						imgsource={Element.imgsource}
 						job={Element.job}

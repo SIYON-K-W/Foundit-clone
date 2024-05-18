@@ -13,10 +13,11 @@ function AppRoute() {
 				<Route path="/" element={<Home />} />
 				<Route path="/auth/Login" element={<Login />} />
 				<Route path="/auth/Register" element={<Signup />} />
-				<Route
+				{/* <Route
 					path="/Jobs"
 					element={<AuthRoute children={<Job />} />}
-				/>
+				/> */}
+				<Route path="/Jobs" element={<Job />} />
 			</Routes>
 		</>
 	);

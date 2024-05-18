@@ -17,20 +17,20 @@ function Categorypart() {
 		}
 	};
 	return (
-		<div className="flex items-center justify-around h-full relative">
-			<MdOutlineCategory className="text-xl" />
+		<div className="flex items-center gap-3 h-full relative">
+			<MdOutlineCategory className="text-xl text-[#a59d9d]" />
 			<input
 				type="text"
-				placeholder="job category"
+				placeholder="experience"
 				value={category}
 				id="inputcategory"
-				className="w-9/12 text-center h-full border-none outline-none capitalize text-base font-custom1"
+				className="w-[70%] h-full border-none outline-none capitalize text-base font-custom1"
 				onClick={Handlebox}
 				readOnly
 			/>
 			<IoIosArrowDown
 				id="arrow"
-				className="transition-transform text-xl"
+				className="transition-transform text-xl text-[#a59d9d]"
 			/>
 			<ClickCategory category={category} setCategory={setCategory} />
 		</div>

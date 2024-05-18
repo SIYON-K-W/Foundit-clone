@@ -7,7 +7,7 @@ function SearchCategory({ setitem }) {
 		<div className="h-56  spot max-4xl:h-36">
 			<div className="wrapper h-full">
 				<div className="flex justify-start items-center gap-5 h-full px-5 pt-3 max-4xl:hidden">
-					<p className="text-white text-2xl w-fit">
+					<p className="text-white text-2xl w-fit whitespace-nowrap">
 						Over 5,00,000&#43; <br /> jobs to explore
 					</p>
 					<Search />

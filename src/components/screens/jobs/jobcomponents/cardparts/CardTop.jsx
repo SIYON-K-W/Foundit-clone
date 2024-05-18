@@ -26,7 +26,7 @@ function CardTop({ imgsource, job, company }) {
 				</div>
 			</div>
 			<CiBookmark className="text-black" />
-			<div className="absolute top-0 -right-3 h-full flex items-center">
+			<div className="absolute top-0 -right-3 h-full hidden items-center activecard">
 				<div className="traingle"></div>
 			</div>
 		</div>

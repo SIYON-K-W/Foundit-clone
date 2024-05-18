@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { CiSearch } from "react-icons/ci";
+import { FiSearch } from "react-icons/fi";
 
 function Searchpart({ placeholding, read, clas }) {
 	const [searchjob, setSearchJob] = useState("");
 	return (
 		<div className={`flex items-center gap-3 h-full ${clas}`}>
-			<CiSearch className="text-2xl" />
+			<FiSearch className="text-2xl text-[#a59d9d]" />
 			{read ? (
 				<input
 					type="text"
