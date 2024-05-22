@@ -3,7 +3,7 @@ import ClickCategory from "../boxes/ClickCategory";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineCategory } from "react-icons/md";
 
-function Categorypart() {
+function Categorypart({ cls, icon = true }) {
 	const [category, setCategory] = useState("");
 	const Handlebox = () => {
 		const show = document.getElementsByClassName("turnit")[0];
@@ -17,22 +17,28 @@ function Categorypart() {
 		}
 	};
 	return (
-		<div className="flex items-center gap-3 h-full relative">
-			<MdOutlineCategory className="text-xl text-[#a59d9d]" />
+		<div className={`flex items-center gap-3 h-full relative px-3`}>
+			{icon && <MdOutlineCategory className="text-xl text-[#a59d9d]" />}
 			<input
 				type="text"
 				placeholder="experience"
 				value={category}
 				id="inputcategory"
-				className="w-[70%] h-full border-none outline-none capitalize text-base font-custom1"
+				className={`${
+					icon ? "w-[70%]" : "w-full text-sm"
+				} h-full border-none outline-none capitalize text-base font-custom1`}
 				onClick={Handlebox}
 				readOnly
 			/>
 			<IoIosArrowDown
 				id="arrow"
-				className="transition-transform text-xl text-[#a59d9d]"
+				className="transition-transform text-xl text-[#a59d9d] ml-auto"
 			/>
-			<ClickCategory category={category} setCategory={setCategory} />
+			<ClickCategory
+				category={category}
+				setCategory={setCategory}
+				cls={cls}
+			/>
 		</div>
 	);
 }

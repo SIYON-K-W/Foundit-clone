@@ -4,7 +4,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { useLog } from "../../context/Logincontext";
 import LogoutButton from "../../general/button/LogoutButton";
-function Navright() {
+function Navright({ regcol }) {
 	const { logined } = useLog();
 	return (
 		<>
@@ -12,7 +12,10 @@ function Navright() {
 				<LogoutButton />
 			) : (
 				<>
-					<div className="flex items-center gap-4 max-4xl:hidden ">
+					<div
+						className={`flex items-center gap-4 ${
+							regcol ? "max-5xl:hidden" : "max-4xl:hidden"
+						}`}>
 						<LSbutton
 							border={"1px solid #9a10bd"}
 							colour={"text-purple-700"}
@@ -34,11 +37,15 @@ function Navright() {
 							where={{ type: "link", path: "/auth/Register" }}
 						/>
 					</div>
-					<div className="flex items-center gap-4 4xl:hidden">
+					<div
+						className={`flex items-center gap-4 ${
+							regcol ? "5xl:hidden" : "4xl:hidden"
+						}`}>
 						<LSbutton
 							icon={<FaRegUser />}
 							type={"register"}
 							where={{ type: "link", path: "/auth/Register" }}
+							colour={regcol}
 						/>
 					</div>
 				</>

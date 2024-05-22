@@ -40,7 +40,8 @@ function LSbutton({
 						{icon}
 					</li>
 				)}
-				<li className={`text-sm font-semibold ${colour} capitalize`}>
+				<li
+					className={`text-sm font-semibold ${colour} capitalize whitespace-nowrap`}>
 					{type}
 				</li>
 			</ul>

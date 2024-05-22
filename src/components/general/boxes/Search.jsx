@@ -7,31 +7,21 @@ import { CiSearch } from "react-icons/ci";
 import Searchpart from "../parts of search/Searchpart";
 import Categorypart from "../parts of search/Categorypart";
 import Searchbutton from "../parts of search/Searchbutton";
+import Location from "../parts of search/Location";
 
 function Search() {
 	return (
 		<>
 			<div className="grow">
-				<form className="bg-white flex items-center h-14 rounded-full pl-4 pr-2 py-2 gap-3">
+				<form className="bg-white flex items-center h-14 rounded-full pl-4 pr-2 py-2">
 					<div className="h-full border-r-2 w-1/2">
-						<Searchpart placeholding={"search for jobs"} />
+						<Searchpart placeholding={"Search For Jobs"} />
+					</div>
+					<div className="h-full border-r-2">
+						<Location cls={""} />
 					</div>
 					<div className="h-full">
-						<div
-							className={
-								"flex items-center gap-3 h-full border-r-2"
-							}>
-							<MdOutlineLocationOn className="text-2xl text-[#a59d9d]" />
-							<input
-								type="text"
-								placeholder="Location"
-								disabled
-								className="h-full border-none outline-none w-full text-base font-custom1 bg-white"
-							/>
-						</div>
-					</div>
-					<div className="h-full">
-						<Categorypart />
+						<Categorypart cls={"top-14"} />
 					</div>
 					<Searchbutton
 						clas={"py-3 px-11 rounded-full bg-[#6E00BE]"}

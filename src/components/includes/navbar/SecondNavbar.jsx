@@ -4,16 +4,18 @@ import Navright from "./Navright";
 import List from "./List";
 import Logo from "./Logo";
 import Maindata from "../../general/navbar/Maindata";
+import Navform from "../../screens/jobs/jobcomponents/Navform";
 
 function SecondNavbar() {
 	return (
-		<Maindata>
-			<div className="flex items-center justify-between">
+		<Maindata clas={"fixed bg-white border-b"}>
+			<div className="flex items-center 3xl:gap-10 max-3xl:justify-between">
 				<div className="flex gap-4 items-center">
-					<Logo />
+					<Logo blue={true} />
 					<List set={true} />
 				</div>
-				<Navright />
+				<Navform />
+				<Navright regcol={"text-[#9a10bd]"} />
 			</div>
 		</Maindata>
 	);

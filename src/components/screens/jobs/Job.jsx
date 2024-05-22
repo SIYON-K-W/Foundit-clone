@@ -9,7 +9,7 @@ function Job() {
 	return (
 		<>
 			<SecondNavbar />
-			<div>
+			<div className="py-24">
 				<div className="wrapper">
 					<div className="flex h-screen overflow-y-auto no-scrollbar">
 						<Card setID={setID} />
