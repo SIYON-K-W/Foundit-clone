@@ -7,6 +7,60 @@
 		"time": "full time",
 		"locaton": "chennai",
 		"experience": "10-18 years",
+		"salary": "",
+		"skills": [
+			"react architect",
+			"react js architect",
+			"reactJS architect",
+			"hbhbhbghvvv",
+			"dsmkfmkmnkdnkn"
+		],
+		"posted": "a day ago",
+		"somepriority": ["early applicant", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Job Title: Full Stack Developer",
+					"Skills: JavaScript, React, Node.js, Express, MongoDB",
+					"Experience: 3 - 6 Years",
+					"Job Location: Remote / San Francisco, CA"
+				]
+			},
+			{
+				"type": "br",
+				"times": 2
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Develop and maintain web applications using React and Node.js",
+					"Collaborate with cross-functional teams to define, design, and ship new features",
+					"Write clean, maintainable, and efficient code",
+					"Ensure the performance, quality, and responsiveness of applications",
+					"Identify bottlenecks and bugs, and devise solutions to these problems"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"We are looking for a highly skilled Full Stack Developer who is comfortable with both front and back end programming. The Full Stack Developer will be responsible for developing and designing front end web architecture, ensuring the responsiveness of applications, and working alongside graphic designers for web design features.",
+					"br",
+					"To be successful in this role, you will need to be proficient in JavaScript, React, Node.js, Express, and MongoDB."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/jdlogo.gif",
+		"id": 2,
+		"job": "react architect",
+		"company": "Synechron Technologies Private Limited",
+		"time": "full time",
+		"locaton": "chennai",
+		"salary": "20000-30000",
+
+		"experience": "10-18 years",
 		"skills": [
 			"react architect",
 			"react js architect",
@@ -14,41 +68,41 @@
 		],
 		"posted": "a day ago",
 		"somepriority": ["early applicant", "quick apply"],
-		"jobdescription": [
+		"jobDescription": [
 			{
-				"type": "b",
+				"type": "bold",
 				"data": [
-					"Job Title : Murex Test Engineer",
-					"Skills : Murex + (MxTest / Mx Test / ONYX)",
-					"Experience : 7 - 14 Years",
-					"Job Location: Bangalore (BCIT)"
+					"Job Title: Full Stack Developer",
+					"Skills: JavaScript, React, Node.js, Express, MongoDB",
+					"Experience: 3 - 6 Years",
+					"Job Location: Remote / San Francisco, CA"
 				]
 			},
-			{}
+			{
+				"type": "br",
+				"times": 2
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Develop and maintain web applications using React and Node.js",
+					"Collaborate with cross-functional teams to define, design, and ship new features",
+					"Write clean, maintainable, and efficient code",
+					"Ensure the performance, quality, and responsiveness of applications",
+					"Identify bottlenecks and bugs, and devise solutions to these problems"
+				]
+			}
 		]
 	},
 	{
-		"imgsource": "",
-		"id": 2,
-		"job": "react architect",
-		"company": "Synechron Technologies Private Limited",
-		"time": "full time",
-		"locaton": "chennai",
-		"experience": "10-18 years",
-		"skills": [
-			"react architect",
-			"react js architect",
-			"reactJS architect"
-		],
-		"posted": "a day ago",
-		"somepriority": ["early applicant"]
-	},
-	{
+		"imgsource": "/src/assets/images/jdlogo.gif",
 		"id": 3,
 		"job": "react architect",
 		"company": "Synechron Technologies Private Limited",
 		"time": "full time",
 		"locaton": "chennai",
+		"salary": "20000-30000",
+
 		"experience": "10-18 years",
 		"skills": [
 			"react architect",
@@ -56,6 +110,210 @@
 			"reactJS architect"
 		],
 		"posted": "a day ago",
-		"somepriority": ["early applicant"]
+		"somepriority": ["early applicant", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Job Title: Full Stack Developer",
+					"Skills: JavaScript, React, Node.js, Express, MongoDB",
+					"Experience: 3 - 6 Years",
+					"Job Location: Remote / San Francisco, CA"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Develop and maintain web applications using React and Node.js",
+					"Collaborate with cross-functional teams to define, design, and ship new features",
+					"Write clean, maintainable, and efficient code",
+					"Ensure the performance, quality, and responsiveness of applications",
+					"Identify bottlenecks and bugs, and devise solutions to these problems"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"We are looking for a highly skilled Full Stack Developer who is comfortable with both front and back end programming. The Full Stack Developer will be responsible for developing and designing front end web architecture, ensuring the responsiveness of applications, and working alongside graphic designers for web design features.",
+					"br",
+					"To be successful in this role, you will need to be proficient in JavaScript, React, Node.js, Express, and MongoDB."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/jdlogo.gif",
+		"id": 4,
+		"job": "react architect",
+		"company": "Synechron Technologies Private Limited",
+		"time": "full time",
+		"locaton": "chennai",
+		"salary": "20000-30000",
+
+		"experience": "10-18 years",
+		"skills": [
+			"react architect",
+			"react js architect",
+			"reactJS architect"
+		],
+		"posted": "a day ago",
+		"somepriority": ["early applicant", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Job Title: Full Stack Developer",
+					"Skills: JavaScript, React, Node.js, Express, MongoDB",
+					"Experience: 3 - 6 Years",
+					"Job Location: Remote / San Francisco, CA"
+				]
+			},
+			{
+				"type": "br",
+				"times": 2
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/jdlogo.gif",
+		"id": 3,
+		"job": "react architect",
+		"company": "Synechron Technologies Private Limited",
+		"time": "full time",
+		"locaton": "chennai",
+		"salary": "20000-30000",
+
+		"experience": "10-18 years",
+		"skills": [
+			"react architect",
+			"react js architect",
+			"reactJS architect"
+		],
+		"posted": "a day ago",
+		"somepriority": ["early applicant", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Job Title: Full Stack Developer",
+					"Skills: JavaScript, React, Node.js, Express, MongoDB",
+					"Experience: 3 - 6 Years",
+					"Job Location: Remote / San Francisco, CA"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Develop and maintain web applications using React and Node.js",
+					"Collaborate with cross-functional teams to define, design, and ship new features",
+					"Write clean, maintainable, and efficient code",
+					"Ensure the performance, quality, and responsiveness of applications",
+					"Identify bottlenecks and bugs, and devise solutions to these problems"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"We are looking for a highly skilled Full Stack Developer who is comfortable with both front and back end programming. The Full Stack Developer will be responsible for developing and designing front end web architecture, ensuring the responsiveness of applications, and working alongside graphic designers for web design features.",
+					"br",
+					"To be successful in this role, you will need to be proficient in JavaScript, React, Node.js, Express, and MongoDB."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/jdlogo.gif",
+		"id": 3,
+		"job": "react architect",
+		"company": "Synechron Technologies Private Limited",
+		"time": "full time",
+		"locaton": "chennai",
+		"salary": "20000-30000",
+
+		"experience": "10-18 years",
+		"skills": [
+			"react architect",
+			"react js architect",
+			"reactJS architect"
+		],
+		"posted": "a day ago",
+		"somepriority": ["early applicant", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Job Title: Full Stack Developer",
+					"Skills: JavaScript, React, Node.js, Express, MongoDB",
+					"Experience: 3 - 6 Years",
+					"Job Location: Remote / San Francisco, CA"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Develop and maintain web applications using React and Node.js",
+					"Collaborate with cross-functional teams to define, design, and ship new features",
+					"Write clean, maintainable, and efficient code",
+					"Ensure the performance, quality, and responsiveness of applications",
+					"Identify bottlenecks and bugs, and devise solutions to these problems"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"We are looking for a highly skilled Full Stack Developer who is comfortable with both front and back end programming. The Full Stack Developer will be responsible for developing and designing front end web architecture, ensuring the responsiveness of applications, and working alongside graphic designers for web design features.",
+					"br",
+					"To be successful in this role, you will need to be proficient in JavaScript, React, Node.js, Express, and MongoDB."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/jdlogo.gif",
+		"id": 3,
+		"job": "react architect",
+		"company": "Synechron Technologies Private Limited",
+		"time": "full time",
+		"locaton": "chennai",
+		"salary": "20000-30000",
+
+		"experience": "10-18 years",
+		"skills": [
+			"react architect",
+			"react js architect",
+			"reactJS architect",
+			"hbhbhbghvvv"
+		],
+		"posted": "a day ago",
+		"somepriority": ["early applicant", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Job Title: Full Stack Developer",
+					"Skills: JavaScript, React, Node.js, Express, MongoDB",
+					"Experience: 3 - 6 Years",
+					"Job Location: Remote / San Francisco, CA"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Develop and maintain web applications using React and Node.js",
+					"Collaborate with cross-functional teams to define, design, and ship new features",
+					"Write clean, maintainable, and efficient code",
+					"Ensure the performance, quality, and responsiveness of applications",
+					"Identify bottlenecks and bugs, and devise solutions to these problems"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"We are looking for a highly skilled Full Stack Developer who is comfortable with both front and back end programming. The Full Stack Developer will be responsible for developing and designing front end web architecture, ensuring the responsiveness of applications, and working alongside graphic designers for web design features.",
+					"br",
+					"To be successful in this role, you will need to be proficient in JavaScript, React, Node.js, Express, and MongoDB."
+				]
+			}
+		]
 	}
 ]

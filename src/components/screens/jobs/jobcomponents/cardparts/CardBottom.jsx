@@ -1,8 +1,7 @@
 import React from "react";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { CiTimer } from "react-icons/ci";
-import { PiRocketLaunchThin } from "react-icons/pi";
-import { render } from "react-dom";
+import { IoPaperPlaneOutline } from "react-icons/io5";
 
 function CardBottom({ posted, somepriority }) {
 	const geticon = (icon) => {
@@ -10,7 +9,7 @@ function CardBottom({ posted, somepriority }) {
 			case "early applicant":
 				return <CiTimer />;
 			case "quick apply":
-				return <PiRocketLaunchThin />;
+				return <IoPaperPlaneOutline />;
 			default:
 				break;
 		}

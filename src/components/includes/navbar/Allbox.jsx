@@ -6,7 +6,7 @@ import { IoMdClose } from "react-icons/io";
 import Location from "../../general/parts of search/Location";
 function Allbox({ settheitem }) {
 	return (
-		<div className="h-screen w-full absolute bg-white">
+		<div className="h-screen w-full absolute bg-white z-[100]">
 			<div className="wrapper h-full">
 				<div className="py-5 flex flex-col h-full">
 					<div className="mb-auto flex items-center justify-between">

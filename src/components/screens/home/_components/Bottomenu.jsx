@@ -29,7 +29,7 @@ function Bottomenu() {
 		},
 	];
 	return (
-		<div className="fixed bottom-0 py-3 max-xl:py-2 w-full bg-white z-40 border-t shadow-[0px_-2px_10px_1px_#00000026]  3xl:hidden">
+		<div className="fixed bottom-0 py-2 w-full bg-white z-40 border-t shadow-[0px_-2px_10px_1px_#00000026]  3xl:hidden">
 			<div className="wrapper h-full">
 				<ul className="flex items-center justify-between h-full">
 					{data.map((Element) => (

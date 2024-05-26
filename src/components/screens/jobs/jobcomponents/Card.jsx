@@ -26,10 +26,10 @@ function Card({ setID }) {
 		setID(id);
 	};
 	return (
-		<div className="w-2/5 flex flex-col gap-5">
+		<div className="w-[42.2%] flex flex-col gap-5">
 			{item.map((Element, index) => (
 				<div
-					className="py-5 flex flex-col border rounded-2xl shadow-md gap-4 card cursor-pointer"
+					className="py-5 flex flex-col border rounded-2xl shadow-md gap-[10px] card cursor-pointer"
 					onClick={() => handle(Element.id, index)}>
 					<CardTop
 						imgsource={Element.imgsource}
@@ -42,6 +42,7 @@ function Card({ setID }) {
 						locaton={Element.locaton}
 						experience={Element.experience}
 						skills={Element.skills}
+						salary={Element.salary}
 					/>
 					<hr className="border-t border-slate-100" />
 					<CardBottom
