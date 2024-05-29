@@ -1,9 +1,63 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import item from "../../../helpers/data.json";
 import CardTop from "./cardparts/CardTop";
 import CardMiddle from "./cardparts/CardMiddle";
 import CardBottom from "./cardparts/CardBottom";
-function Card({ setID }) {
+import data from "../../../helpers/data.json";
+import { JobselectContext } from "../Job";
+import { useParams } from "react-router-dom";
+function Card({ setID, searchingitem }) {
+	const [item, setItem] = useState([]);
+	const { Jobselect, setJobSelect } = useContext(JobselectContext);
+	const { cate } = useParams();
+	useEffect(() => {
+		if (Jobselect != "Jobs") {
+			if (Jobselect) {
+				const items = data.filter(
+					(element) =>
+						element.job.toLowerCase().replace(/\s/g, "") ===
+						Jobselect.toLowerCase().replace(/\s/g, "")
+				);
+				setItem(items);
+			} else {
+				setItem(data);
+			}
+		}
+	}, [Jobselect]);
+	useEffect(() => {
+		if (searchingitem) {
+			const items = data.filter((element) =>
+				element.job
+					.toLowerCase()
+					.replace(/\s/g, "")
+					.includes(searchingitem.toLowerCase().replace(/\s/g, ""))
+			);
+			setItem(items);
+			// setJobSelect("Jobs");
+		} else {
+			setItem(data);
+		}
+	}, [searchingitem]);
+
+	useEffect(() => {
+		if (cate) {
+			const filteredItems = data.filter(
+				(element) =>
+					element.category.toLowerCase().replace(/\s/g, "") ===
+					cate.toLowerCase().replace(/\s/g, "")
+			);
+			setItem(filteredItems);
+		} else {
+			setItem([]);
+		}
+	}, [cate]);
+	useEffect(() => {
+		console.log(searchingitem, Jobselect, cate);
+		if (searchingitem === null && Jobselect === null && cate === null) {
+			setItem(data);
+		}
+	}, [searchingitem, Jobselect, cate]);
+
 	const handle = (id, index) => {
 		const cards = document.getElementsByClassName("card");
 		const Activecard = document.getElementsByClassName("activecard");
@@ -46,7 +100,7 @@ function Card({ setID }) {
 					/>
 					<hr className="border-t border-slate-100" />
 					<CardBottom
-						posted={Element.posted}
+						posted={Element.aboutpost}
 						somepriority={Element.somepriority}
 					/>
 				</div>

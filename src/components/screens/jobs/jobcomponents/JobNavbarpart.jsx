@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Searchpart from "../../../general/parts of search/Searchpart";
 import ClickCategory from "../../../general/boxes/ClickCategory";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineCategory } from "react-icons/md";
+import data from "../../../helpers/data.json";
+import { JobselectContext } from "../Job";
 
 function JobNavbarpart({ cls, set }) {
-	const [Jobselect, setJobSelect] = useState("Jobs");
+	const { Jobselect, setJobSelect } = useContext(JobselectContext);
 	const Handlebox = () => {
 		const show = document.getElementsByClassName("hello")[0];
 		if (show) {
@@ -19,6 +21,8 @@ function JobNavbarpart({ cls, set }) {
 		}
 	};
 	const Jobsname = [
+		"Full Stack Developer",
+		"React Architect",
 		"Software Engineer",
 		"Data Scientist",
 		"Project Manager",
@@ -64,7 +68,7 @@ function JobNavbarpart({ cls, set }) {
 						<input
 							type="text"
 							placeholder="experience"
-							value={Jobselect}
+							value={Jobselect ? Jobselect : "Jobs"}
 							id="inputcategory"
 							className="outline-none font-custom1 grow text-center"
 							onClick={Handlebox}

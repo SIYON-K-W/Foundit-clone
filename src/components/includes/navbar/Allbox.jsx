@@ -4,11 +4,19 @@ import Categorypart from "../../general/parts of search/Categorypart";
 import Searchbutton from "../../general/parts of search/Searchbutton";
 import { IoMdClose } from "react-icons/io";
 import Location from "../../general/parts of search/Location";
+import { useSearch } from "../../context/SearchContext";
 function Allbox({ settheitem }) {
+	const { searchjob, setSearchJob, searchit } = useSearch();
+
 	return (
 		<div className="h-screen w-full absolute bg-white z-[100]">
 			<div className="wrapper h-full">
-				<div className="py-5 flex flex-col h-full">
+				<form
+					onSubmit={(e) => {
+						searchit(e);
+						settheitem.removehandleit();
+					}}
+					className="py-5 flex flex-col h-full">
 					<div className="mb-auto flex items-center justify-between">
 						<p className="capitalize text-xl">search jobs</p>
 						<IoMdClose
@@ -16,6 +24,7 @@ function Allbox({ settheitem }) {
 							onClick={settheitem.removehandleit}
 						/>
 					</div>
+
 					<div className="flex flex-col items-center gap-4">
 						<div className="w-full h-11 bg-white rounded-md pl-4 pr-2 py-2 border">
 							<Searchpart placeholding={"Search For Jobs"} />
@@ -34,7 +43,7 @@ function Allbox({ settheitem }) {
 						clas={"py-3 rounded-md mt-auto bg-purple-700 "}
 						ele={"search"}
 					/>
-				</div>
+				</form>
 			</div>
 		</div>
 	);

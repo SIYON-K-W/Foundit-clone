@@ -12,66 +12,54 @@ function PopularCategories() {
 		{
 			icon: <BsBank className="text-lg text-orange-900" />,
 			P: "banking",
-			to: "/",
 		},
 		{
 			icon: <GoHome className="text-lg text-orange-900" />,
 			P: "work from home",
-			to: "/",
 		},
 		{
 			icon: <GoPeople className="text-lg text-orange-900" />,
 			P: "HR",
-			to: "/",
 		},
 		{
 			icon: <IoBag className="text-lg text-orange-900" />,
 			P: "sales",
-			to: "/",
 		},
 		{
 			icon: <SlCalculator className="text-lg text-orange-900" />,
 			P: "accounting",
-			to: "/",
 		},
 		{
 			icon: (
 				<RiCustomerService2Line className="text-lg text-orange-900" />
 			),
 			P: "customer support",
-			to: "/",
 		},
 	];
 	const data2 = [
 		{
 			icon: <RiComputerLine className="text-lg text-orange-900" />,
 			P: "IT",
-			to: "/",
 		},
 		{
 			icon: <BsBank className="text-lg text-orange-900" />,
 			P: "banking",
-			to: "/",
 		},
 		{
 			icon: <GoHome className="text-lg text-orange-900" />,
 			P: "work from home",
-			to: "/",
 		},
 		{
 			icon: <GoPeople className="text-lg text-orange-900" />,
 			P: "HR",
-			to: "/",
 		},
 		{
 			icon: <IoBag className="text-lg text-orange-900" />,
 			P: "sales",
-			to: "/",
 		},
 		{
 			icon: <SlCalculator className="text-lg text-orange-900" />,
 			P: "accounting",
-			to: "/",
 		},
 	];
 	return (
@@ -84,7 +72,7 @@ function PopularCategories() {
 					{data1.map((Element) => (
 						<Link
 							className="border rounded-md w-44 min-w-44"
-							to={Element.to}
+							to={`/category/${Element.P}`}
 							style={{ width: "15.5%" }}>
 							<ul className="flex items-center gap-2 p-1">
 								<li className="p-3 rounded-md bg-orange-100">
@@ -101,7 +89,7 @@ function PopularCategories() {
 					{data2.map((Element) => (
 						<Link
 							className="border rounded-md w-44 min-w-44"
-							to={Element.to}
+							to={`/category/${Element.P}`}
 							style={{ width: "15.5%" }}>
 							<ul className="flex items-center gap-2 p-1">
 								<li className="p-3 rounded-md bg-orange-100">

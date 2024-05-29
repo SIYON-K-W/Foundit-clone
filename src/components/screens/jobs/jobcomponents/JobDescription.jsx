@@ -1,10 +1,40 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import data from "../../../helpers/data.json";
 import { ImNewTab } from "react-icons/im";
 import { IoPaperPlaneOutline } from "react-icons/io5";
+import { LuEye } from "react-icons/lu";
+import { CiPaperplane } from "react-icons/ci";
+import { MdOutlineAccessTime } from "react-icons/md";
+import { MdOutlineLocationOn } from "react-icons/md";
+import { MdOutlineCurrencyRupee } from "react-icons/md";
+import { GrUserExpert } from "react-icons/gr";
+import { MdOutlineCalendarMonth } from "react-icons/md";
+
 function JobDescription({ id }) {
 	const [Jobdata, setJObData] = useState([]);
-	console.log(id);
+	const handlescroll = () => {
+		const scrollableDiv = document.getElementById("scrollableDiv");
+		const description = document.getElementById("job description");
+		const currentScrollPosition = scrollableDiv.scrollTop;
+		const descriptionPosition = description.offsetTop - 140;
+		const highname = document.getElementsByClassName("activeness");
+		if (descriptionPosition <= currentScrollPosition) {
+			highname[1].classList.add("activescroll");
+			highname[0].classList.remove("activescroll");
+		} else {
+			highname[1].classList.remove("activescroll");
+			highname[0].classList.add("activescroll");
+		}
+	};
+	const handlescrollintoview = (id) => {
+		const scrollableDiv = document.getElementById("scrollableDiv");
+		const item = document.getElementById(`${id}`).offsetTop - 140;
+		console.log(item);
+		scrollableDiv.scrollTo({
+			top: item,
+			behavior: "smooth",
+		});
+	};
 	useEffect(() => {
 		try {
 			const filtereddata = data.filter((element) => element.id === id);
@@ -14,36 +44,53 @@ function JobDescription({ id }) {
 		}
 	}, [id]);
 	const handle = (data) => {
-		console.log("mnjnjn");
 		return data.map((element) => {
 			switch (element.type) {
 				case "bold":
-					console.log(element.data);
 					return element.data.map((element) => (
 						<>
-							<b>{element}</b>
-							<br />
+							{" "}
+							{element === "br" ? (
+								<br />
+							) : (
+								<>
+									<b className="font-custom1 text-[#1d1934] text-sm">
+										{element}
+									</b>
+									<br />
+								</>
+							)}
 						</>
 					));
 				case "ul":
 					return (
-						<ul className="list-disc">
+						<ul className="list-disc pl-5">
 							{element.data.map((element) => (
-								<li>{element}</li>
+								<li className="font-custom1 text-sm text-[#3b3b3b]">
+									{element}
+								</li>
 							))}
 						</ul>
 					);
 				case "ol":
 					return (
-						<ol className="list-decimal">
+						<ol className="list-decimal pl-5 flex flex-col items-start">
 							{element.data.map((element) => (
-								<li>{element}</li>
+								<li className="font-custom1 text-sm text-[#3b3b3b]">
+									{element}
+								</li>
 							))}
 						</ol>
 					);
 				case "p":
 					return element.data.map((element) =>
-						element === "br" ? <br /> : <p>{element}</p>
+						element === "br" ? (
+							<br />
+						) : (
+							<p className="font-custom1 text-[#1d1934] text-sm">
+								{element}
+							</p>
+						)
 					);
 				case "br":
 					return (
@@ -62,8 +109,8 @@ function JobDescription({ id }) {
 		});
 	};
 	return (
-		<div className="h-full border-[#f4f4f5] border-2 bg-white rounded-2xl w-full py-4">
-			<div className="flex gap-2 flex-col">
+		<div className="h-screen border-[#f4f4f5] border-2 bg-white rounded-2xl w-full py-4">
+			<div className="flex gap-2 flex-col h-full">
 				{Jobdata.map((element) => (
 					<>
 						<div className="flex justify-between px-4">
@@ -103,20 +150,89 @@ function JobDescription({ id }) {
 						<hr />
 						<div>
 							<ul className="px-6 flex items-center gap-8">
-								<li className="capitalize cursor-pointer py-[6px] decoration-2 hover:decoration-[#6e00be] decoration-[#fff] text-sm underline underline-offset-[18px] hover:text-[#6e00be] text-[#777585] font-custom1 hover:font-bold">
+								<li
+									className="capitalize cursor-pointer py-[6px] decoration-2 hover:decoration-[#6e00be] decoration-[#fff] text-sm underline underline-offset-[18px] hover:text-[#6e00be] text-[#777585] font-custom1 hover:font-bold activescroll activeness"
+									onClick={() => {
+										handlescrollintoview("highlights");
+									}}>
 									highlights
 								</li>
-								<li className="capitalize cursor-pointer py-[6px] decoration-2 hover:decoration-[#6e00be] decoration-[#fff] text-sm underline underline-offset-[18px] hover:text-[#6e00be] text-[#777585] font-custom1 hover:font-bold">
+								<li
+									className="capitalize cursor-pointer py-[6px] decoration-2 hover:decoration-[#6e00be] decoration-[#fff] text-sm underline underline-offset-[18px] hover:text-[#6e00be] text-[#777585] font-custom1 hover:font-bold activeness"
+									onClick={() => {
+										handlescrollintoview("job description");
+									}}>
 									job description
 								</li>
 							</ul>
 						</div>
 						<hr />
-						<div>
-							<div className="border-[#d2d1d6] border"></div>
-						</div>
-						<div>
-							{/* <p>{handle(element.jobDescription)}</p> */}
+						<div
+							className="overflow-y-scroll no-scrollbar grow flex flex-col gap-2 px-6"
+							id="scrollableDiv"
+							onScroll={handlescroll}>
+							<div className="py-4" id="highlights">
+								<ul className="border-[#d2d1d6] border rounded-t-lg px-7 py-5 flex flex-col items-start gap-2">
+									<li className="flex items-center gap-2 capitalize font-custom1">
+										<MdOutlineLocationOn className="text-base text-[#a5a3ae]" />
+										<p className="text-xs">
+											{element.locaton}
+										</p>
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="flex items-center gap-2 capitalize font-custom1">
+											<MdOutlineCalendarMonth className="text-sm text-[#a5a3ae]" />
+											<p className="text-xs">
+												{element.experience}
+											</p>
+										</div>
+										{element.salary ? (
+											<div className="flex items-center gap-2 capitalize font-custom1">
+												<span className="text-xs text-slate-300">
+													&#124;
+												</span>
+												<MdOutlineCurrencyRupee className="text-sm text-[#a5a3ae]" />
+												<p className="text-xs uppercase">
+													{element.salary} inr
+												</p>
+											</div>
+										) : (
+											""
+										)}
+									</li>
+									<li className="flex items-center gap-4">
+										<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
+											<MdOutlineAccessTime className="text-base" />
+											<span className="text-xs">
+												{element.aboutpost.postedate}
+											</span>
+										</div>
+										<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
+											<LuEye className="text-base" />
+											<span className="text-xs">
+												{element.aboutpost.seed}
+											</span>
+										</div>
+										<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
+											<CiPaperplane className="text-base" />
+											<span className="capitalize text-xs">
+												{element.aboutpost.applied}{" "}
+												applied
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div
+								className="flex flex-col gap-4"
+								id="job description">
+								<h4 className="capitalize text-sm">
+									job description
+								</h4>
+								<div>
+									<div>{handle(element.jobDescription)}</div>
+								</div>
+							</div>
 						</div>
 					</>
 				))}

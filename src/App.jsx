@@ -4,13 +4,16 @@ import AppRoute from "./components/routing/AppRoute";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logincontext from "./components/context/Logincontext";
+import Searching from "./components/context/SearchContext";
 
 function App() {
 	return (
 		<>
-			<Logincontext>
-				<AppRoute />
-			</Logincontext>
+			<Searching>
+				<Logincontext>
+					<AppRoute />
+				</Logincontext>
+			</Searching>
 		</>
 	);
 }

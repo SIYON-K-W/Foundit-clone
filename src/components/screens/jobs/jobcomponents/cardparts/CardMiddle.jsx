@@ -3,7 +3,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
-import { GrUserExpert } from "react-icons/gr";
+import { MdOutlineCalendarMonth } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 
 function CardMiddle({ time, locaton, experience, skills, salary }) {
@@ -26,7 +26,7 @@ function CardMiddle({ time, locaton, experience, skills, salary }) {
 				""
 			)}
 			<li className="flex items-center gap-2 capitalize font-custom1 text-slate-600">
-				<GrUserExpert className="text-sm" />
+				<MdOutlineCalendarMonth className="text-sm" />
 				<p className="text-xs">{experience}</p>
 			</li>
 			<li className="flex items-center gap-2 w-full">

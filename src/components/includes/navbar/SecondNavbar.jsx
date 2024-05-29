@@ -3,10 +3,7 @@ import NavLeft from "./NavLeft";
 import Navright from "./Navright";
 import List from "./List";
 import Logo from "./Logo";
-import Maindata from "../../general/navbar/Maindata";
 import Navform from "../../screens/jobs/jobcomponents/Navform";
-
-import Searchpart from "../../general/parts of search/Searchpart";
 import JobNavbarpart from "../../screens/jobs/jobcomponents/JobNavbarpart";
 import Allbox from "./Allbox";
 

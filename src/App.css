@@ -88,3 +88,8 @@
 	top: 45%;
 	right: 4%;
 }
+.activescroll {
+	color: #6e00be !important;
+	text-decoration-color: #6e00be !important;
+	font-weight: bold !important;
+}

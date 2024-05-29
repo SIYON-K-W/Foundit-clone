@@ -8,12 +8,16 @@ import Searchpart from "../parts of search/Searchpart";
 import Categorypart from "../parts of search/Categorypart";
 import Searchbutton from "../parts of search/Searchbutton";
 import Location from "../parts of search/Location";
+import { useSearch } from "../../context/SearchContext";
 
 function Search() {
+	const { searchjob, setSearchJob, searchit } = useSearch();
 	return (
 		<>
 			<div className="grow">
-				<form className="bg-white flex items-center h-14 rounded-full pl-4 pr-2 py-2">
+				<form
+					className="bg-white flex items-center h-14 rounded-full pl-4 pr-2 py-2"
+					onSubmit={searchit}>
 					<div className="h-full border-r-2 w-1/2">
 						<Searchpart placeholding={"Search For Jobs"} />
 					</div>

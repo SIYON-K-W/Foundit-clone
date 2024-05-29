@@ -4,6 +4,7 @@ import { CiTimer } from "react-icons/ci";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 
 function CardBottom({ posted, somepriority }) {
+	console.log(posted);
 	const geticon = (icon) => {
 		switch (icon) {
 			case "early applicant":
@@ -18,7 +19,7 @@ function CardBottom({ posted, somepriority }) {
 		<div className="flex items-center justify-between px-5">
 			<p className="flex items-center gap-2 font-custom1 text-xs text-slate-600">
 				<MdOutlineAccessTime />
-				<span>{posted}</span>
+				<span>{posted.postedate}</span>
 			</p>
 			{somepriority ? (
 				<ul className="flex items-center gap-2 font-custom1 text-xs text-slate-600 capitalize">

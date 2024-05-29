@@ -18,6 +18,8 @@ function AppRoute() {
 					element={<AuthRoute children={<Job />} />}
 				/> */}
 				<Route path="/Jobs" element={<Job />} />
+				<Route path="/Jobs/search/:name" element={<Job />} />
+				<Route path="/category/:cate" element={<Job />} />
 			</Routes>
 		</>
 	);
