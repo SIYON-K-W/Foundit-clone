@@ -3,11 +3,10 @@ import Searchpart from "../../../general/parts of search/Searchpart";
 import ClickCategory from "../../../general/boxes/ClickCategory";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineCategory } from "react-icons/md";
-import data from "../../../helpers/data.json";
-import { JobselectContext } from "../Job";
+import { useSearch } from "../../../context/SearchContext";
 
 function JobNavbarpart({ cls, set }) {
-	const { Jobselect, setJobSelect } = useContext(JobselectContext);
+	const { Jobselect, setJobSelect } = useSearch();
 	const Handlebox = () => {
 		const show = document.getElementsByClassName("hello")[0];
 		if (show) {

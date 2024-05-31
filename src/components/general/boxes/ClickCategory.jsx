@@ -1,9 +1,11 @@
 import React, { useRef, useEffect } from "react";
+import { useSearch } from "../../context/SearchContext";
 
 function ClickCategory({ category, setCategory, cls, listcls, data }) {
 	const cate = useRef();
-
+	const { searchjob, type, setType } = useSearch();
 	const handle = (name) => {
+		setType("sort");
 		setCategory(name);
 	};
 

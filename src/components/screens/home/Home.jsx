@@ -23,9 +23,7 @@ function Home() {
 	useEffect(() => {
 		const handle = () => {
 			const scrolly = window.scrollY;
-			const scrollx = window.scrollX;
-			console.log(scrolly);
-			if (scrolly >= 200 && scrollx <= 980) {
+			if (scrolly >= 200) {
 				setIsfixed(true);
 			} else {
 				setIsfixed(false);

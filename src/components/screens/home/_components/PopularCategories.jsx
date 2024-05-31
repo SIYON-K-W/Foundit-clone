@@ -7,7 +7,9 @@ import { IoBag } from "react-icons/io5";
 import { SlCalculator } from "react-icons/sl";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { RiComputerLine } from "react-icons/ri";
+import { useSearch } from "../../../context/SearchContext";
 function PopularCategories() {
+	const { searchjob, setSearchJob, type, setType } = useSearch();
 	const data1 = [
 		{
 			icon: <BsBank className="text-lg text-orange-900" />,
@@ -73,6 +75,7 @@ function PopularCategories() {
 						<Link
 							className="border rounded-md w-44 min-w-44"
 							to={`/category/${Element.P}`}
+							onClick={setType("category")}
 							style={{ width: "15.5%" }}>
 							<ul className="flex items-center gap-2 p-1">
 								<li className="p-3 rounded-md bg-orange-100">
@@ -90,7 +93,8 @@ function PopularCategories() {
 						<Link
 							className="border rounded-md w-44 min-w-44"
 							to={`/category/${Element.P}`}
-							style={{ width: "15.5%" }}>
+							style={{ width: "15.5%" }}
+							onClick={setType("category")}>
 							<ul className="flex items-center gap-2 p-1">
 								<li className="p-3 rounded-md bg-orange-100">
 									{Element.icon}

@@ -93,3 +93,34 @@
 	text-decoration-color: #6e00be !important;
 	font-weight: bold !important;
 }
+.paginationcontain {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 30px;
+}
+.previous a {
+	font-size: 25px;
+	font-family: poppinsregular;
+}
+.next a {
+	font-size: 25px;
+	font-family: poppinsregular;
+}
+.previous.disabled a {
+	color: #a1a1a1;
+}
+.next.disabled a {
+	color: #a1a1a1;
+}
+.pages {
+	color: #000;
+	font-family: poppinsregular;
+	border-radius: 3px;
+	font-size: 16px;
+	padding: 4px 18px;
+}
+.pages.selected {
+	background-color: #6e00be;
+	color: #fff;
+}

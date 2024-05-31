@@ -4,8 +4,11 @@ import { MdHomeFilled } from "react-icons/md";
 import { IoBag } from "react-icons/io5";
 import { GrServices } from "react-icons/gr";
 import { BsNut } from "react-icons/bs";
+import { useSearch } from "../../../context/SearchContext";
 
 function Bottomenu() {
+	const { setSearchJob, setType, setJobSelect } = useSearch();
+
 	const data = [
 		{
 			icon: <MdHomeFilled className="text-xl max-xl:text-lg" />,
@@ -36,6 +39,12 @@ function Bottomenu() {
 						<li>
 							<NavLink
 								to={Element.to}
+								onClick={() => {
+									if (Element.P === "jobs") {
+										setType("all");
+										setJobSelect("");
+									}
+								}}
 								className={`${(isActive) =>
 									isActive
 										? "active"

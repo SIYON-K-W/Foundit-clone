@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useSearch } from "../../context/SearchContext";
 
 function Searchpart({ placeholding, read, clas, icon = true, inputcls }) {
-	const { searchjob, setSearchJob, searchit } = useSearch();
+	const { searchjob, setSearchJob } = useSearch();
 	const { name } = useParams();
 	return (
 		<div className={`flex items-center gap-3 h-full ${clas}`}>
@@ -13,7 +13,7 @@ function Searchpart({ placeholding, read, clas, icon = true, inputcls }) {
 				<input
 					type="text"
 					placeholder={`${placeholding}`}
-					value={searchjob && name ? searchjob : null}
+					value={searchjob !== null && name ? searchjob : null}
 					className="h-full border-none outline-none w-full text-base font-custom1"
 					readOnly
 				/>
@@ -22,7 +22,7 @@ function Searchpart({ placeholding, read, clas, icon = true, inputcls }) {
 					type="text"
 					placeholder={`${placeholding}`}
 					onChange={(e) => setSearchJob(e.target.value)}
-					value={searchjob && name ? searchjob : null}
+					value={searchjob !== null && name ? searchjob : null}
 					required
 					className={`h-full border-none outline-none w-full text-base font-custom1 ${inputcls}`}
 				/>

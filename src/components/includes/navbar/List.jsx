@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Hoverbox from "../../general/boxes/Hoverbox";
 import HoverboxSecond from "../../general/boxes/HoverboxSecond";
+import { useSearch } from "../../context/SearchContext";
 
 function List({ set, clas }) {
+	const { setSearchJob, setType, setJobSelect } = useSearch();
+	useSearch();
+
 	const data = [
 		{
 			name: "boost",
@@ -28,6 +32,10 @@ function List({ set, clas }) {
 				<li>
 					<NavLink
 						to={"/Jobs"}
+						onClick={() => {
+							setType("all");
+							setJobSelect("");
+						}}
 						className={`${(isActive) =>
 							isActive
 								? "active"

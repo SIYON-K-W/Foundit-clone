@@ -26,9 +26,9 @@ function JobDescription({ id }) {
 			highname[0].classList.add("activescroll");
 		}
 	};
-	const handlescrollintoview = (id) => {
+	const handlescrollintoview = (ID) => {
 		const scrollableDiv = document.getElementById("scrollableDiv");
-		const item = document.getElementById(`${id}`).offsetTop - 140;
+		const item = document.getElementById(`${ID}`).offsetTop - 140;
 		console.log(item);
 		scrollableDiv.scrollTo({
 			top: item,
@@ -37,8 +37,14 @@ function JobDescription({ id }) {
 	};
 	useEffect(() => {
 		try {
-			const filtereddata = data.filter((element) => element.id === id);
-			setJObData(filtereddata);
+			if (id) {
+				console.log("keri");
+				const filtereddata = data.filter(
+					(element) => element.id === id
+				);
+				console.log(filtereddata);
+				setJObData(filtereddata);
+			}
 		} catch (error) {
 			console.log(error);
 		}
@@ -109,133 +115,144 @@ function JobDescription({ id }) {
 		});
 	};
 	return (
-		<div className="h-screen border-[#f4f4f5] border-2 bg-white rounded-2xl w-full py-4">
+		<div className="h-full border-[#f4f4f5] border-2 bg-white rounded-2xl w-full py-4">
 			<div className="flex gap-2 flex-col h-full">
-				{Jobdata.map((element) => (
-					<>
-						<div className="flex justify-between px-4">
-							<div className="flex items-center gap-3">
-								{element.imgsource ? (
-									<div className="w-[50px] h-[50px] flex items-center bg-white border">
-										<h3>
-											<img
-												src={element.imgsource}
-												alt="company logo"
-												className="w-full"
-											/>
-										</h3>
-									</div>
-								) : (
-									""
-								)}
-								<div>
-									<div className="flex items-center gap-1">
-										<h5 className="capitalize">
-											{element.job}
-										</h5>
-										<ImNewTab />
-									</div>
-									<p className="capitalize font-custom1 text-sm text-[#777585]">
-										{element.company}
-									</p>
-								</div>
-							</div>
-							<button className="h-[34px] w-[200px] flex items-center justify-center rounded-lg gap-1 text-white bg-[#6E00BE]">
-								<IoPaperPlaneOutline />
-								<span className="font-custom1 capitalize text-xs">
-									quick apply
-								</span>
-							</button>
-						</div>
-						<hr />
-						<div>
-							<ul className="px-6 flex items-center gap-8">
-								<li
-									className="capitalize cursor-pointer py-[6px] decoration-2 hover:decoration-[#6e00be] decoration-[#fff] text-sm underline underline-offset-[18px] hover:text-[#6e00be] text-[#777585] font-custom1 hover:font-bold activescroll activeness"
-									onClick={() => {
-										handlescrollintoview("highlights");
-									}}>
-									highlights
-								</li>
-								<li
-									className="capitalize cursor-pointer py-[6px] decoration-2 hover:decoration-[#6e00be] decoration-[#fff] text-sm underline underline-offset-[18px] hover:text-[#6e00be] text-[#777585] font-custom1 hover:font-bold activeness"
-									onClick={() => {
-										handlescrollintoview("job description");
-									}}>
-									job description
-								</li>
-							</ul>
-						</div>
-						<hr />
-						<div
-							className="overflow-y-scroll no-scrollbar grow flex flex-col gap-2 px-6"
-							id="scrollableDiv"
-							onScroll={handlescroll}>
-							<div className="py-4" id="highlights">
-								<ul className="border-[#d2d1d6] border rounded-t-lg px-7 py-5 flex flex-col items-start gap-2">
-									<li className="flex items-center gap-2 capitalize font-custom1">
-										<MdOutlineLocationOn className="text-base text-[#a5a3ae]" />
-										<p className="text-xs">
-											{element.locaton}
+				{Jobdata ? (
+					Jobdata.map((element) => (
+						<>
+							<div className="flex justify-between px-4">
+								<div className="flex items-center gap-3">
+									{element.imgsource ? (
+										<div className="w-[50px] h-[50px] flex items-center bg-white border">
+											<h3>
+												<img
+													src={element.imgsource}
+													alt="company logo"
+													className="w-full"
+												/>
+											</h3>
+										</div>
+									) : (
+										""
+									)}
+									<div>
+										<div className="flex items-center gap-1">
+											<h5 className="capitalize">
+												{element.job}
+											</h5>
+											<ImNewTab />
+										</div>
+										<p className="capitalize font-custom1 text-sm text-[#777585]">
+											{element.company}
 										</p>
+									</div>
+								</div>
+								<button className="h-[34px] w-[200px] flex items-center justify-center rounded-lg gap-1 text-white bg-[#6E00BE]">
+									<IoPaperPlaneOutline />
+									<span className="font-custom1 capitalize text-xs">
+										quick apply
+									</span>
+								</button>
+							</div>
+							<hr />
+							<div>
+								<ul className="px-6 flex items-center gap-8">
+									<li
+										className="capitalize cursor-pointer py-[6px] decoration-2 hover:decoration-[#6e00be] decoration-[#fff] text-sm underline underline-offset-[18px] hover:text-[#6e00be] text-[#777585] font-custom1 hover:font-bold activescroll activeness"
+										onClick={() => {
+											handlescrollintoview("highlights");
+										}}>
+										highlights
 									</li>
-									<li className="flex items-center gap-2">
-										<div className="flex items-center gap-2 capitalize font-custom1">
-											<MdOutlineCalendarMonth className="text-sm text-[#a5a3ae]" />
-											<p className="text-xs">
-												{element.experience}
-											</p>
-										</div>
-										{element.salary ? (
-											<div className="flex items-center gap-2 capitalize font-custom1">
-												<span className="text-xs text-slate-300">
-													&#124;
-												</span>
-												<MdOutlineCurrencyRupee className="text-sm text-[#a5a3ae]" />
-												<p className="text-xs uppercase">
-													{element.salary} inr
-												</p>
-											</div>
-										) : (
-											""
-										)}
-									</li>
-									<li className="flex items-center gap-4">
-										<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
-											<MdOutlineAccessTime className="text-base" />
-											<span className="text-xs">
-												{element.aboutpost.postedate}
-											</span>
-										</div>
-										<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
-											<LuEye className="text-base" />
-											<span className="text-xs">
-												{element.aboutpost.seed}
-											</span>
-										</div>
-										<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
-											<CiPaperplane className="text-base" />
-											<span className="capitalize text-xs">
-												{element.aboutpost.applied}{" "}
-												applied
-											</span>
-										</div>
+									<li
+										className="capitalize cursor-pointer py-[6px] decoration-2 hover:decoration-[#6e00be] decoration-[#fff] text-sm underline underline-offset-[18px] hover:text-[#6e00be] text-[#777585] font-custom1 hover:font-bold activeness"
+										onClick={() => {
+											handlescrollintoview(
+												"job description"
+											);
+										}}>
+										job description
 									</li>
 								</ul>
 							</div>
+							<hr />
 							<div
-								className="flex flex-col gap-4"
-								id="job description">
-								<h4 className="capitalize text-sm">
-									job description
-								</h4>
-								<div>
-									<div>{handle(element.jobDescription)}</div>
+								className="overflow-y-scroll no-scrollbar grow flex flex-col gap-2 px-6"
+								id="scrollableDiv"
+								onScroll={handlescroll}>
+								<div className="py-4" id="highlights">
+									<ul className="border-[#d2d1d6] border rounded-t-lg px-7 py-5 flex flex-col items-start gap-2">
+										<li className="flex items-center gap-2 capitalize font-custom1">
+											<MdOutlineLocationOn className="text-base text-[#a5a3ae]" />
+											<p className="text-xs">
+												{element.locaton}
+											</p>
+										</li>
+										<li className="flex items-center gap-2">
+											<div className="flex items-center gap-2 capitalize font-custom1">
+												<MdOutlineCalendarMonth className="text-sm text-[#a5a3ae]" />
+												<p className="text-xs">
+													{element.experience}
+												</p>
+											</div>
+											{element.salary ? (
+												<div className="flex items-center gap-2 capitalize font-custom1">
+													<span className="text-xs text-slate-300">
+														&#124;
+													</span>
+													<MdOutlineCurrencyRupee className="text-sm text-[#a5a3ae]" />
+													<p className="text-xs uppercase">
+														{element.salary} inr
+													</p>
+												</div>
+											) : (
+												""
+											)}
+										</li>
+										<li className="flex items-center gap-4">
+											<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
+												<MdOutlineAccessTime className="text-base" />
+												<span className="text-xs">
+													{
+														element.aboutpost
+															.postedate
+													}
+												</span>
+											</div>
+											<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
+												<LuEye className="text-base" />
+												<span className="text-xs">
+													{element.aboutpost.seed}
+												</span>
+											</div>
+											<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
+												<CiPaperplane className="text-base" />
+												<span className="capitalize text-xs">
+													{element.aboutpost.applied}{" "}
+													applied
+												</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div
+									className="flex flex-col gap-4"
+									id="job description">
+									<h4 className="capitalize text-sm">
+										job description
+									</h4>
+									<div>
+										<div>
+											{handle(element.jobDescription)}
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</>
-				))}
+						</>
+					))
+				) : (
+					<div>sahufuhfuhyagziyg</div>
+				)}
 			</div>
 		</div>
 	);
