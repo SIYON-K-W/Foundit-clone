@@ -11,7 +11,7 @@
 		"category": "banking",
 		"skills": ["Loan Processing", "Customer Service", "Financial Analysis"],
 		"aboutpost": { "postedate": "2 days ago", "applied": 25, "seed": 10 },
-		"somepriority": ["on-site", "quick apply"],
+		"somepriority": ["early applicant", "quick apply"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -73,7 +73,7 @@
 		"category": "banking",
 		"skills": ["Branch Management", "Leadership", "Customer Service"],
 		"aboutpost": { "postedate": "1 week ago", "applied": 40, "seed": 20 },
-		"somepriority": ["on-site", "leadership role"],
+		"somepriority": ["early applicant", "leadership role"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -139,7 +139,7 @@
 			"Market Research"
 		],
 		"aboutpost": { "postedate": "5 days ago", "applied": 50, "seed": 25 },
-		"somepriority": ["on-site", "high salary"],
+		"somepriority": ["early applicant", "high salary"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -387,7 +387,7 @@
 		"category": "HR",
 		"skills": ["HR Management", "Recruitment", "Employee Relations"],
 		"aboutpost": { "postedate": "1 week ago", "applied": 30, "seed": 15 },
-		"somepriority": ["on-site", "leadership role"],
+		"somepriority": ["early applicant", "leadership role"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -449,7 +449,7 @@
 		"category": "HR",
 		"skills": ["Recruitment", "Sourcing", "Interviewing"],
 		"aboutpost": { "postedate": "2 days ago", "applied": 40, "seed": 20 },
-		"somepriority": ["on-site", "quick apply"],
+		"somepriority": ["early applicant", "quick apply"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -511,7 +511,7 @@
 		"category": "HR",
 		"skills": ["Employee Relations", "Conflict Resolution", "HR Policies"],
 		"aboutpost": { "postedate": "4 days ago", "applied": 25, "seed": 10 },
-		"somepriority": ["on-site", "leadership role"],
+		"somepriority": ["early applicant", "leadership role"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -573,7 +573,7 @@
 		"category": "sales",
 		"skills": ["Sales", "Customer Service", "Negotiation"],
 		"aboutpost": { "postedate": "3 days ago", "applied": 35, "seed": 15 },
-		"somepriority": ["on-site", "quick apply"],
+		"somepriority": ["early applicant", "quick apply"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -635,7 +635,7 @@
 		"category": "sales",
 		"skills": ["Account Management", "Sales", "Customer Relations"],
 		"aboutpost": { "postedate": "1 week ago", "applied": 40, "seed": 20 },
-		"somepriority": ["on-site", "leadership role"],
+		"somepriority": ["early applicant", "leadership role"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -697,7 +697,7 @@
 		"category": "sales",
 		"skills": ["Business Development", "Sales", "Market Research"],
 		"aboutpost": { "postedate": "5 days ago", "applied": 50, "seed": 25 },
-		"somepriority": ["on-site", "leadership role"],
+		"somepriority": ["early applicant", "leadership role"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -759,7 +759,7 @@
 		"category": "accounting",
 		"skills": ["Accounting", "Financial Reporting", "Taxation"],
 		"aboutpost": { "postedate": "2 days ago", "applied": 45, "seed": 20 },
-		"somepriority": ["on-site", "quick apply"],
+		"somepriority": ["early applicant", "quick apply"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -821,7 +821,7 @@
 		"category": "accounting",
 		"skills": ["Financial Analysis", "Forecasting", "Investment"],
 		"aboutpost": { "postedate": "3 days ago", "applied": 40, "seed": 25 },
-		"somepriority": ["on-site", "quick apply"],
+		"somepriority": ["early applicant", "quick apply"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -1014,7 +1014,7 @@
 		"category": "customer support",
 		"skills": ["Technical Support", "Troubleshooting", "Customer Service"],
 		"aboutpost": { "postedate": "3 days ago", "applied": 35, "seed": 15 },
-		"somepriority": ["on-site", "quick apply"],
+		"somepriority": ["early applicant", "quick apply"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -1076,7 +1076,7 @@
 		"category": "customer support",
 		"skills": ["Help Desk Support", "IT Support", "Customer Service"],
 		"aboutpost": { "postedate": "1 week ago", "applied": 40, "seed": 20 },
-		"somepriority": ["on-site", "leadership role"],
+		"somepriority": ["early applicant", "leadership role"],
 		"jobDescription": [
 			{
 				"type": "bold",
@@ -1138,7 +1138,7 @@
 		"category": "IT",
 		"skills": ["Software Development", "JavaScript", "ReactJS"],
 		"aboutpost": { "postedate": "5 days ago", "applied": 50, "seed": 25 },
-		"somepriority": ["on-site", "leadership role"],
+		"somepriority": ["early applicant", "leadership role"],
 		"jobDescription": [
 			{
 				"type": "bold",
