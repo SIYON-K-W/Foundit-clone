@@ -939,5 +939,252 @@
 				]
 			}
 		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (8).jpeg",
+		"id": 16,
+		"job": "Customer Support Specialist",
+		"company": "Zendesk",
+		"time": "full time",
+		"location": "Remote",
+		"experience": "1-3 years",
+		"salary": "1000-2000",
+		"category": "customer support",
+		"skills": ["Customer Service", "Communication", "Problem-Solving"],
+		"aboutpost": { "postedate": "2 days ago", "applied": 30, "seed": 10 },
+		"somepriority": ["remote work", "flexible hours"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Customer Support Specialist",
+					"Role: Customer Support",
+					"Years of Experience: 1 to 3 Years",
+					"Job Location: Remote",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Providing customer service and support"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in customer service",
+					"Knowledge of problem-solving techniques",
+					"Experience with customer support tools"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for a Customer Support Specialist to join our team and provide excellent customer service and support.",
+					"Job Title",
+					"Customer Support Specialist",
+					"Location",
+					"Remote",
+					"Educational Background",
+					"Bachelor's degree in any field",
+					"Key Responsibilities",
+					"Provide customer service and support.",
+					"Resolve customer issues and concerns.",
+					"Maintain accurate records of customer interactions.",
+					"Develop and implement customer support strategies.",
+					"Ensure customer satisfaction and retention.",
+					"Skills Required",
+					"In-depth knowledge of customer service and support.",
+					"Excellent communication and problem-solving skills.",
+					"Strong attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (1).jpeg",
+		"id": 17,
+		"job": "Technical Support Representative",
+		"company": "Microsoft",
+		"time": "full time",
+		"location": "Seattle",
+		"experience": "2-4 years",
+		"salary": "1200-2400",
+		"category": "customer support",
+		"skills": ["Technical Support", "Troubleshooting", "Customer Service"],
+		"aboutpost": { "postedate": "3 days ago", "applied": 35, "seed": 15 },
+		"somepriority": ["on-site", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Technical Support Representative",
+					"Role: Technical Support",
+					"Years of Experience: 2 to 4 Years",
+					"Job Location: Seattle",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Providing technical support and troubleshooting"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in technical support and troubleshooting",
+					"Knowledge of customer service",
+					"Experience with support tools and platforms"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for a Technical Support Representative to join our team and provide technical support and troubleshooting.",
+					"Job Title",
+					"Technical Support Representative",
+					"Location",
+					"Seattle",
+					"Educational Background",
+					"Bachelor's degree in any field",
+					"Key Responsibilities",
+					"Provide technical support and troubleshooting.",
+					"Resolve technical issues and concerns.",
+					"Maintain accurate records of support interactions.",
+					"Develop and implement support strategies.",
+					"Ensure customer satisfaction and retention.",
+					"Skills Required",
+					"In-depth knowledge of technical support and troubleshooting.",
+					"Excellent communication and problem-solving skills.",
+					"Strong attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (2).jpeg",
+		"id": 18,
+		"job": "Help Desk Analyst",
+		"company": "Google",
+		"time": "full time",
+		"location": "Mountain View",
+		"experience": "3-5 years",
+		"salary": "1400-2800",
+		"category": "customer support",
+		"skills": ["Help Desk Support", "IT Support", "Customer Service"],
+		"aboutpost": { "postedate": "1 week ago", "applied": 40, "seed": 20 },
+		"somepriority": ["on-site", "leadership role"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Help Desk Analyst",
+					"Role: Help Desk Support",
+					"Years of Experience: 3 to 5 Years",
+					"Job Location: Mountain View",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Providing help desk and IT support"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in help desk and IT support",
+					"Knowledge of customer service",
+					"Experience with support tools and platforms"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for a Help Desk Analyst to join our team and provide help desk and IT support.",
+					"Job Title",
+					"Help Desk Analyst",
+					"Location",
+					"Mountain View",
+					"Educational Background",
+					"Bachelor's degree in any field",
+					"Key Responsibilities",
+					"Provide help desk and IT support.",
+					"Resolve IT issues and concerns.",
+					"Maintain accurate records of support interactions.",
+					"Develop and implement support strategies.",
+					"Ensure customer satisfaction and retention.",
+					"Skills Required",
+					"In-depth knowledge of help desk and IT support.",
+					"Excellent communication and problem-solving skills.",
+					"Strong attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (3).jpeg",
+		"id": 19,
+		"job": "Software Developer",
+		"company": "Facebook",
+		"time": "full time",
+		"location": "Menlo Park",
+		"experience": "4-6 years",
+		"salary": "2500-4500",
+		"category": "IT",
+		"skills": ["Software Development", "JavaScript", "ReactJS"],
+		"aboutpost": { "postedate": "5 days ago", "applied": 50, "seed": 25 },
+		"somepriority": ["on-site", "leadership role"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Software Developer",
+					"Role: Software Development",
+					"Years of Experience: 4 to 6 Years",
+					"Job Location: Menlo Park",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Developing software applications and solutions"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in software development",
+					"Knowledge of JavaScript and ReactJS",
+					"Experience with development tools and platforms"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for a Software Developer to join our team and develop software applications and solutions.",
+					"Job Title",
+					"Software Developer",
+					"Location",
+					"Menlo Park",
+					"Educational Background",
+					"Bachelor's degree in Computer Science or related field",
+					"Key Responsibilities",
+					"Develop software applications and solutions.",
+					"Collaborate with cross-functional teams.",
+					"Maintain accurate records of development activities.",
+					"Ensure software quality and performance.",
+					"Skills Required",
+					"In-depth knowledge of software development.",
+					"Excellent communication and problem-solving skills.",
+					"Strong attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
 	}
 ]
