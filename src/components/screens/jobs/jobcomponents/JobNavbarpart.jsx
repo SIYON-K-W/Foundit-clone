@@ -19,35 +19,30 @@ function JobNavbarpart({ cls, set }) {
 				"rotate(180deg)";
 		}
 	};
-	const Jobsname = [
-		"Full Stack Developer",
-		"React Architect",
-		"Software Engineer",
-		"Data Scientist",
-		"Project Manager",
-		"Graphic Designer",
-		"Marketing Specialist",
-		"Human Resources Manager",
-		"Sales Executive",
-		"Financial Analyst",
-		"Customer Service Representative",
-		"Content Writer",
-		"Product Manager",
-		"Web Developer",
-		"Network Administrator",
-		"UX/UI Designer",
-		"Mechanical Engineer",
-		"Civil Engineer",
-		"Business Analyst",
-		"Research Scientist",
+	const jobs = [
+		"Loan Officer",
+		"Branch Manager",
+		"Investment Analyst",
+		"Remote Customer Service Representative",
+		"Freelance Writer",
+		"Virtual Assistant",
+		"HR Manager",
+		"Recruitment Specialist",
+		"Employee Relations Consultant",
+		"Sales Representative",
+		"Account Executive",
+		"Business Development Manager",
 		"Accountant",
-		"Operations Manager",
-		"Social Media Manager",
-		"IT Support Specialist",
-		"Quality Assurance Tester",
-		"Database Administrator",
-		"Medical Laboratory Technician",
+		"Auditor",
+		"Financial Analyst",
+		"Customer Support Specialist",
+		"Technical Support Representative",
+		"Help Desk Analyst",
+		"Software Developer",
+		"System Administrator",
+		"Network Engineer",
 	];
+
 	return (
 		<div className={cls}>
 			<div className="wrapper">
@@ -82,7 +77,7 @@ function JobNavbarpart({ cls, set }) {
 							setCategory={setJobSelect}
 							cls={"top-10 left-0"}
 							listcls={"text-center"}
-							data={Jobsname}
+							data={jobs}
 						/>
 					</div>
 				</div>

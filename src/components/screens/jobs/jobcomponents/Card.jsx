@@ -99,7 +99,7 @@ function Card({ item }) {
 							<hr className="border-t border-slate-100" />
 							<CardMiddle
 								time={Element.time}
-								locaton={Element.locaton}
+								locaton={Element.location}
 								experience={Element.experience}
 								skills={Element.skills}
 								salary={Element.salary}

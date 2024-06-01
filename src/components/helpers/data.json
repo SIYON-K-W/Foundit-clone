@@ -1,105 +1,887 @@
 [
 	{
-		"imgsource": "/src/assets/images/jdlogo.gif",
+		"imgsource": "/src/assets/images/sliderimage (1).jpeg",
 		"id": 1,
-		"job": "React Architect",
-		"company": "Synechron Technologies Private Limited",
+		"job": "Loan Officer",
+		"company": "Bank of America",
 		"time": "full time",
-		"locaton": "Chennai",
-		"experience": "10-18 years",
-		"salary": "2000-3000",
-		"skills": [
-			"React Architect",
-			"React JS Architect",
-			"ReactJS Architect",
-			"hbhbhbghvvv",
-			"dsmkfmkmnkdnkn"
-		],
-		"category": "hr",
-		"aboutpost": { "postedate": "a day ago", "applied": 43, "seed": 23 },
-		"somepriority": ["early applicant", "quick apply"],
+		"location": "New York",
+		"experience": "3-5 years",
+		"salary": "1000-2000",
+		"category": "banking",
+		"skills": ["Loan Processing", "Customer Service", "Financial Analysis"],
+		"aboutpost": { "postedate": "2 days ago", "applied": 25, "seed": 10 },
+		"somepriority": ["on-site", "quick apply"],
 		"jobDescription": [
 			{
 				"type": "bold",
 				"data": [
-					"Designation: Sr. Associate / Lead / Manager",
-					"Role: NodeJS Developer",
-					"Years of Experience: 8 to 12 Years",
-					"Job Location: Bangalore BCIT",
+					"Designation: Loan Officer",
+					"Role: Loan Processing",
+					"Years of Experience: 3 to 5 Years",
+					"Job Location: New York",
 					"Must have skill",
 					"Roles & Responsibilities (As per Hiring Manager):",
-					"API Banking"
+					"Loan Processing and Customer Service"
 				]
 			},
 			{
 				"type": "ol",
 				"data": [
 					"Client interaction involved - Must have good Communication",
-					"Authentication mechanism - Any one",
-					"Network Level - Must have good knowledge on how the request flows and how the access is given or assigned",
-					"Kafka & MongoDB"
+					"Proficiency in financial analysis",
+					"Knowledge of loan products and services",
+					"Experience with customer service"
 				]
 			},
 			{
 				"type": "p",
 				"data": [
 					"About the Job",
-					"Highly experienced Functional Business Analyst with a deep understanding of the trading domain to join our growing team.",
-					"A pivotal role in bridging the gap between business needs and technical solutions, specifically focusing on order and trade management systems for various asset classes.",
-					"This job will require to collaborate with stakeholders across the trading floor, development teams, testing team and risk management to ensure the successful implementation and ongoing optimization of these critical systems.",
+					"We are looking for an experienced Loan Officer to join our team and assist customers with their loan applications and financial needs.",
 					"Job Title",
-					"Business Analyst (Trading Domain)",
+					"Loan Officer",
 					"Location",
-					"Bangalore, Hyderabad, Noida, Pune, Chennai, Mumbai",
+					"New York",
 					"Educational Background",
-					"B. Tech and MBA (Preferred)",
+					"Bachelor's degree in Finance or related field",
 					"Key Responsibilities",
-					"Partner with business stakeholders (traders, portfolio managers, risk managers) to elicit, analyse, and document complex business requirements for order and trade management systems.",
-					"Strong experience in IT consulting and business analysis business process definition, business process consulting, requirements gathering, Functional designs and specifications, product solution design, proficiency in writing complex BRD, FSD, Product design and product roadmap.",
-					"Work closely with developers and testers throughout the development lifecycle to ensure system functionality aligns with business needs.",
-					"Conduct user acceptance testing (UAT) and participate in system rollouts to ensure smooth adoption by business users.",
-					"Identify and document process improvement opportunities related to order and trade management workflows.",
-					"Collaborate with the risk management team to ensure compliance with relevant regulations and internal risk controls.",
-					"Stay up to date on industry trends and best practices in trading technology.",
-					"Maintain strong technical acumen with a solid understanding of relevant trading platforms and technologies.",
-					"Create and manage backlogs, Create Epic, User stories, Prioritization, and preparation/readiness for project Increment Planning.",
-					"Solid experience in Scrum Agile development or Scaled Agile Framework, Jira experience required.",
+					"Process loan applications and assess eligibility.",
+					"Provide excellent customer service to clients.",
+					"Analyze financial data to determine loan risk.",
+					"Maintain accurate records of loan transactions.",
+					"Stay up to date with the latest financial regulations and products.",
 					"Skills Required",
-					"Possess in-depth knowledge of order types, trade lifecycles, and regulatory considerations for the following asset classes:",
-					"Equity",
-					"Fixed Income",
-					"Exchange Traded Derivatives (ETDs)",
-					"Over the Counter (OTC) Derivatives",
-					"Hedge Funds",
-					"Great understanding of exchanges CME, COMEX, CBOT, NYMEX.",
+					"In-depth knowledge of loan processing and financial analysis.",
+					"Excellent communication and customer service skills.",
+					"Strong problem-solving skills and attention to detail.",
 					"Additional Requirements",
-					"Strong understanding of order and trade management processes for equity, fixed income, exchange traded derivatives, OTC derivatives, hedge funds, and risk management.",
-					"Excellent communication and interpersonal skills with the ability to effectively bridge the gap between business and technical teams.",
-					"Demonstrated ability to work independently and manage multiple priorities in a fast-paced environment.",
-					"Strong analytical and problem-solving skills.",
-					"Experience with business process modelling tools (e.g., BPMN).",
-					"Hands-on experience working with SQL."
+					"Ability to work independently and manage multiple tasks."
 				]
 			}
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/jdlogo.gif",
+		"imgsource": "/src/assets/images/sliderimage (2).jpeg",
 		"id": 2,
-		"job": "Full Stack Developer",
-		"company": "Infosys Limited",
+		"job": "Branch Manager",
+		"company": "Wells Fargo",
 		"time": "full time",
-		"locaton": "Hyderabad",
-		"experience": "6-10 years",
-		"salary": "1500-2500",
-		"category": "hr",
+		"location": "San Francisco",
+		"experience": "5-7 years",
+		"salary": "1500-3000",
+		"category": "banking",
+		"skills": ["Branch Management", "Leadership", "Customer Service"],
+		"aboutpost": { "postedate": "1 week ago", "applied": 40, "seed": 20 },
+		"somepriority": ["on-site", "leadership role"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Branch Manager",
+					"Role: Branch Management",
+					"Years of Experience: 5 to 7 Years",
+					"Job Location: San Francisco",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Managing branch operations and customer service"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in branch management",
+					"Knowledge of banking products and services",
+					"Experience with customer service and team leadership"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Branch Manager to join our team and oversee the daily operations of our branch.",
+					"Job Title",
+					"Branch Manager",
+					"Location",
+					"San Francisco",
+					"Educational Background",
+					"Bachelor's degree in Business Administration or related field",
+					"Key Responsibilities",
+					"Manage branch operations and staff.",
+					"Provide excellent customer service to clients.",
+					"Ensure compliance with banking regulations.",
+					"Develop and implement branch strategies.",
+					"Monitor and improve branch performance.",
+					"Skills Required",
+					"In-depth knowledge of branch management and customer service.",
+					"Excellent communication and leadership skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (3).jpeg",
+		"id": 3,
+		"job": "Investment Analyst",
+		"company": "Goldman Sachs",
+		"time": "full time",
+		"location": "New York",
+		"experience": "2-4 years",
+		"salary": "2000-4000",
+		"category": "banking",
 		"skills": [
-			"Full Stack Development",
-			"JavaScript",
-			"ReactJS",
-			"NodeJS",
-			"REST APIs"
+			"Investment Analysis",
+			"Financial Modeling",
+			"Market Research"
 		],
+		"aboutpost": { "postedate": "5 days ago", "applied": 50, "seed": 25 },
+		"somepriority": ["on-site", "high salary"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Investment Analyst",
+					"Role: Investment Analysis",
+					"Years of Experience: 2 to 4 Years",
+					"Job Location: New York",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Conducting investment analysis and market research"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in financial modeling",
+					"Knowledge of investment products and services",
+					"Experience with market research"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Investment Analyst to join our team and provide investment recommendations based on thorough research and analysis.",
+					"Job Title",
+					"Investment Analyst",
+					"Location",
+					"New York",
+					"Educational Background",
+					"Bachelor's degree in Finance or related field",
+					"Key Responsibilities",
+					"Conduct investment analysis and research.",
+					"Develop financial models to evaluate investment opportunities.",
+					"Provide investment recommendations to clients.",
+					"Monitor and report on investment performance.",
+					"Stay up to date with the latest market trends and developments.",
+					"Skills Required",
+					"In-depth knowledge of investment analysis and financial modeling.",
+					"Excellent communication and analytical skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (4).jpeg",
+		"id": 4,
+		"job": "Remote Customer Service Representative",
+		"company": "Amazon",
+		"time": "part time",
+		"location": "Remote",
+		"experience": "1-2 years",
+		"salary": "500-1000",
+		"category": "work from home",
+		"skills": ["Customer Service", "Communication", "Problem Solving"],
+		"aboutpost": { "postedate": "3 days ago", "applied": 35, "seed": 15 },
+		"somepriority": ["remote work", "flexible hours"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Customer Service Representative",
+					"Role: Customer Support",
+					"Years of Experience: 1 to 2 Years",
+					"Job Location: Remote",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Providing customer support and solving issues"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in customer service",
+					"Knowledge of company products and services",
+					"Experience with problem solving"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for a Remote Customer Service Representative to join our team and provide excellent customer support to our clients.",
+					"Job Title",
+					"Customer Service Representative",
+					"Location",
+					"Remote",
+					"Educational Background",
+					"High School Diploma or equivalent",
+					"Key Responsibilities",
+					"Provide customer support through various channels.",
+					"Resolve customer issues and complaints.",
+					"Maintain accurate records of customer interactions.",
+					"Stay up to date with company products and services.",
+					"Ensure customer satisfaction and retention.",
+					"Skills Required",
+					"In-depth knowledge of customer service and communication.",
+					"Excellent problem-solving and interpersonal skills.",
+					"Strong attention to detail and organizational skills.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (5).jpeg",
+		"id": 5,
+		"job": "Freelance Writer",
+		"company": "Upwork",
+		"time": "contract",
+		"location": "Remote",
+		"experience": "2-3 years",
+		"salary": "800-1600",
+		"category": "work from home",
+		"skills": ["Writing", "Research", "SEO"],
+		"aboutpost": { "postedate": "1 week ago", "applied": 60, "seed": 30 },
+		"somepriority": ["remote work", "flexible hours"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Freelance Writer",
+					"Role: Content Creation",
+					"Years of Experience: 2 to 3 Years",
+					"Job Location: Remote",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Creating content and articles"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in writing and research",
+					"Knowledge of SEO and content marketing",
+					"Experience with content creation"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for a Freelance Writer to join our team and create high-quality content for our clients.",
+					"Job Title",
+					"Freelance Writer",
+					"Location",
+					"Remote",
+					"Educational Background",
+					"Bachelor's degree in English or related field",
+					"Key Responsibilities",
+					"Create content and articles for various platforms.",
+					"Conduct research and gather information.",
+					"Ensure content is SEO optimized.",
+					"Edit and proofread content before publication.",
+					"Stay up to date with the latest content trends.",
+					"Skills Required",
+					"In-depth knowledge of writing and research.",
+					"Excellent SEO and content marketing skills.",
+					"Strong attention to detail and creativity.",
+					"Additional Requirements",
+					"Ability to work independently and meet deadlines."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (6).jpeg",
+		"id": 6,
+		"job": "Virtual Assistant",
+		"company": "Zirtual",
+		"time": "part time",
+		"location": "Remote",
+		"experience": "1-3 years",
+		"salary": "600-1200",
+		"category": "work from home",
+		"skills": ["Administrative Support", "Communication", "Organization"],
+		"aboutpost": { "postedate": "4 days ago", "applied": 45, "seed": 20 },
+		"somepriority": ["remote work", "flexible hours"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Virtual Assistant",
+					"Role: Administrative Support",
+					"Years of Experience: 1 to 3 Years",
+					"Job Location: Remote",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Providing administrative support"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in administrative tasks",
+					"Knowledge of office software",
+					"Experience with organization and scheduling"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for a Virtual Assistant to join our team and provide administrative support to our clients.",
+					"Job Title",
+					"Virtual Assistant",
+					"Location",
+					"Remote",
+					"Educational Background",
+					"High School Diploma or equivalent",
+					"Key Responsibilities",
+					"Provide administrative support to clients.",
+					"Manage schedules and appointments.",
+					"Handle correspondence and communication.",
+					"Organize and maintain files and records.",
+					"Assist with project management tasks.",
+					"Skills Required",
+					"In-depth knowledge of administrative support and organization.",
+					"Excellent communication and multitasking skills.",
+					"Strong attention to detail and time management.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (7).jpeg",
+		"id": 7,
+		"job": "HR Manager",
+		"company": "Google",
+		"time": "full time",
+		"location": "Mountain View",
+		"experience": "7-10 years",
+		"salary": "2000-4000",
+		"category": "HR",
+		"skills": ["HR Management", "Recruitment", "Employee Relations"],
+		"aboutpost": { "postedate": "1 week ago", "applied": 30, "seed": 15 },
+		"somepriority": ["on-site", "leadership role"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: HR Manager",
+					"Role: HR Management",
+					"Years of Experience: 7 to 10 Years",
+					"Job Location: Mountain View",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Managing HR operations and recruitment"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in HR management",
+					"Knowledge of recruitment and employee relations",
+					"Experience with HR policies and procedures"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced HR Manager to join our team and manage HR operations and recruitment processes.",
+					"Job Title",
+					"HR Manager",
+					"Location",
+					"Mountain View",
+					"Educational Background",
+					"Bachelor's degree in Human Resources or related field",
+					"Key Responsibilities",
+					"Manage HR operations and processes.",
+					"Oversee recruitment and employee relations.",
+					"Develop and implement HR policies and procedures.",
+					"Ensure compliance with employment laws and regulations.",
+					"Provide HR support to employees and managers.",
+					"Skills Required",
+					"In-depth knowledge of HR management and recruitment.",
+					"Excellent communication and interpersonal skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (8).jpeg",
+		"id": 8,
+		"job": "Recruitment Specialist",
+		"company": "LinkedIn",
+		"time": "full time",
+		"location": "Sunnyvale",
+		"experience": "3-5 years",
+		"salary": "1500-3000",
+		"category": "HR",
+		"skills": ["Recruitment", "Sourcing", "Interviewing"],
+		"aboutpost": { "postedate": "2 days ago", "applied": 40, "seed": 20 },
+		"somepriority": ["on-site", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Recruitment Specialist",
+					"Role: Recruitment",
+					"Years of Experience: 3 to 5 Years",
+					"Job Location: Sunnyvale",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Sourcing and interviewing candidates"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in recruitment and sourcing",
+					"Knowledge of interviewing techniques",
+					"Experience with recruitment tools and platforms"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Recruitment Specialist to join our team and assist with sourcing and interviewing candidates.",
+					"Job Title",
+					"Recruitment Specialist",
+					"Location",
+					"Sunnyvale",
+					"Educational Background",
+					"Bachelor's degree in Human Resources or related field",
+					"Key Responsibilities",
+					"Source and screen candidates for open positions.",
+					"Conduct interviews and assess candidate qualifications.",
+					"Maintain accurate records of candidate interactions.",
+					"Develop and implement recruitment strategies.",
+					"Ensure a positive candidate experience.",
+					"Skills Required",
+					"In-depth knowledge of recruitment and sourcing.",
+					"Excellent communication and interviewing skills.",
+					"Strong organizational skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (1).jpeg",
+		"id": 9,
+		"job": "Employee Relations Consultant",
+		"company": "Microsoft",
+		"time": "full time",
+		"location": "Redmond",
+		"experience": "5-7 years",
+		"salary": "1800-3500",
+		"category": "HR",
+		"skills": ["Employee Relations", "Conflict Resolution", "HR Policies"],
+		"aboutpost": { "postedate": "4 days ago", "applied": 25, "seed": 10 },
+		"somepriority": ["on-site", "leadership role"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Employee Relations Consultant",
+					"Role: Employee Relations",
+					"Years of Experience: 5 to 7 Years",
+					"Job Location: Redmond",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Managing employee relations and conflict resolution"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in employee relations",
+					"Knowledge of conflict resolution techniques",
+					"Experience with HR policies and procedures"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Employee Relations Consultant to join our team and manage employee relations and conflict resolution processes.",
+					"Job Title",
+					"Employee Relations Consultant",
+					"Location",
+					"Redmond",
+					"Educational Background",
+					"Bachelor's degree in Human Resources or related field",
+					"Key Responsibilities",
+					"Manage employee relations and conflict resolution processes.",
+					"Provide guidance and support to employees and managers.",
+					"Develop and implement employee relations policies.",
+					"Ensure compliance with employment laws and regulations.",
+					"Promote a positive workplace culture.",
+					"Skills Required",
+					"In-depth knowledge of employee relations and conflict resolution.",
+					"Excellent communication and interpersonal skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (2).jpeg",
+		"id": 10,
+		"job": "Sales Representative",
+		"company": "Apple",
+		"time": "full time",
+		"location": "Cupertino",
+		"experience": "2-4 years",
+		"salary": "1200-2400",
+		"category": "sales",
+		"skills": ["Sales", "Customer Service", "Negotiation"],
+		"aboutpost": { "postedate": "3 days ago", "applied": 35, "seed": 15 },
+		"somepriority": ["on-site", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Sales Representative",
+					"Role: Sales",
+					"Years of Experience: 2 to 4 Years",
+					"Job Location: Cupertino",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Selling products and providing customer service"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in sales and customer service",
+					"Knowledge of negotiation techniques",
+					"Experience with sales tools and platforms"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Sales Representative to join our team and assist with selling our products and providing excellent customer service.",
+					"Job Title",
+					"Sales Representative",
+					"Location",
+					"Cupertino",
+					"Educational Background",
+					"Bachelor's degree in Business Administration or related field",
+					"Key Responsibilities",
+					"Sell products and services to customers.",
+					"Provide excellent customer service and support.",
+					"Maintain accurate records of sales transactions.",
+					"Develop and implement sales strategies.",
+					"Stay up to date with the latest product trends and developments.",
+					"Skills Required",
+					"In-depth knowledge of sales and customer service.",
+					"Excellent communication and negotiation skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (3).jpeg",
+		"id": 11,
+		"job": "Account Executive",
+		"company": "Salesforce",
+		"time": "full time",
+		"location": "San Francisco",
+		"experience": "3-5 years",
+		"salary": "1500-3000",
+		"category": "sales",
+		"skills": ["Account Management", "Sales", "Customer Relations"],
+		"aboutpost": { "postedate": "1 week ago", "applied": 40, "seed": 20 },
+		"somepriority": ["on-site", "leadership role"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Account Executive",
+					"Role: Account Management",
+					"Years of Experience: 3 to 5 Years",
+					"Job Location: San Francisco",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Managing accounts and customer relations"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in account management",
+					"Knowledge of sales techniques",
+					"Experience with customer relations"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Account Executive to join our team and manage accounts and customer relations.",
+					"Job Title",
+					"Account Executive",
+					"Location",
+					"San Francisco",
+					"Educational Background",
+					"Bachelor's degree in Business Administration or related field",
+					"Key Responsibilities",
+					"Manage accounts and customer relations.",
+					"Develop and implement account strategies.",
+					"Maintain accurate records of account interactions.",
+					"Provide excellent customer service and support.",
+					"Ensure customer satisfaction and retention.",
+					"Skills Required",
+					"In-depth knowledge of account management and sales.",
+					"Excellent communication and customer relations skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (4).jpeg",
+		"id": 12,
+		"job": "Business Development Manager",
+		"company": "IBM",
+		"time": "full time",
+		"location": "Armonk",
+		"experience": "5-7 years",
+		"salary": "2000-4000",
+		"category": "sales",
+		"skills": ["Business Development", "Sales", "Market Research"],
+		"aboutpost": { "postedate": "5 days ago", "applied": 50, "seed": 25 },
+		"somepriority": ["on-site", "leadership role"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Business Development Manager",
+					"Role: Business Development",
+					"Years of Experience: 5 to 7 Years",
+					"Job Location: Armonk",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Developing business and sales strategies"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in business development",
+					"Knowledge of sales and market research",
+					"Experience with business development tools and platforms"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Business Development Manager to join our team and develop business and sales strategies.",
+					"Job Title",
+					"Business Development Manager",
+					"Location",
+					"Armonk",
+					"Educational Background",
+					"Bachelor's degree in Business Administration or related field",
+					"Key Responsibilities",
+					"Develop business and sales strategies.",
+					"Conduct market research and analysis.",
+					"Identify and pursue new business opportunities.",
+					"Maintain accurate records of business development activities.",
+					"Ensure business growth and development.",
+					"Skills Required",
+					"In-depth knowledge of business development and sales.",
+					"Excellent communication and market research skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (5).jpeg",
+		"id": 13,
+		"job": "Accountant",
+		"company": "Deloitte",
+		"time": "full time",
+		"location": "New York",
+		"experience": "3-5 years",
+		"salary": "1500-2500",
+		"category": "accounting",
+		"skills": ["Accounting", "Financial Reporting", "Taxation"],
+		"aboutpost": { "postedate": "2 days ago", "applied": 45, "seed": 20 },
+		"somepriority": ["on-site", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Accountant",
+					"Role: Financial Reporting",
+					"Years of Experience: 3 to 5 Years",
+					"Job Location: New York",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Handling accounting and financial reporting"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in accounting and financial reporting",
+					"Knowledge of taxation and financial regulations",
+					"Experience with accounting software"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Accountant to join our team and handle accounting and financial reporting.",
+					"Job Title",
+					"Accountant",
+					"Location",
+					"New York",
+					"Educational Background",
+					"Bachelor's degree in Accounting or related field",
+					"Key Responsibilities",
+					"Handle accounting and financial reporting.",
+					"Prepare and file tax returns.",
+					"Maintain accurate records of financial transactions.",
+					"Ensure compliance with financial regulations.",
+					"Provide financial advice and support.",
+					"Skills Required",
+					"In-depth knowledge of accounting and financial reporting.",
+					"Excellent communication and analytical skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (6).jpeg",
+		"id": 14,
+		"job": "Financial Analyst",
+		"company": "Goldman Sachs",
+		"time": "full time",
+		"location": "New York",
+		"experience": "3-5 years",
+		"salary": "2000-3500",
+		"category": "accounting",
+		"skills": ["Financial Analysis", "Forecasting", "Investment"],
+		"aboutpost": { "postedate": "3 days ago", "applied": 40, "seed": 25 },
+		"somepriority": ["on-site", "quick apply"],
+		"jobDescription": [
+			{
+				"type": "bold",
+				"data": [
+					"Designation: Financial Analyst",
+					"Role: Financial Analysis",
+					"Years of Experience: 3 to 5 Years",
+					"Job Location: New York",
+					"Must have skill",
+					"Roles & Responsibilities (As per Hiring Manager):",
+					"Conducting financial analysis and forecasting"
+				]
+			},
+			{
+				"type": "ol",
+				"data": [
+					"Client interaction involved - Must have good Communication",
+					"Proficiency in financial analysis and forecasting",
+					"Knowledge of investment strategies",
+					"Experience with financial analysis tools and platforms"
+				]
+			},
+			{
+				"type": "p",
+				"data": [
+					"About the Job",
+					"We are looking for an experienced Financial Analyst to join our team and conduct financial analysis and forecasting.",
+					"Job Title",
+					"Financial Analyst",
+					"Location",
+					"New York",
+					"Educational Background",
+					"Bachelor's degree in Finance or related field",
+					"Key Responsibilities",
+					"Conduct financial analysis and forecasting.",
+					"Analyze investment opportunities and strategies.",
+					"Prepare financial reports and presentations.",
+					"Maintain accurate records of financial transactions.",
+					"Provide financial advice and support.",
+					"Skills Required",
+					"In-depth knowledge of financial analysis and forecasting.",
+					"Excellent communication and analytical skills.",
+					"Strong problem-solving skills and attention to detail.",
+					"Additional Requirements",
+					"Ability to work independently and manage multiple tasks."
+				]
+			}
+		]
+	},
+	{
+		"imgsource": "/src/assets/images/sliderimage (7).jpeg",
+		"id": 15,
+		"job": "Tax Consultant",
+		"company": "PwC",
+		"time": "full time",
+		"location": "Chicago",
+		"experience": "4-6 years",
+		"salary": "1800-3000",
+		"category": "accounting",
+		"skills": ["Taxation", "Financial Planning", "Compliance"],
 		"aboutpost": { "postedate": "3 days ago", "applied": 30, "seed": 15 },
 		"somepriority": ["remote work", "quick apply"],
 		"jobDescription": [
@@ -154,69 +936,6 @@
 					"Excellent communication and teamwork skills.",
 					"Ability to work independently and manage multiple tasks.",
 					"Experience with version control systems such as Git."
-				]
-			}
-		]
-	},
-	{
-		"imgsource": "/src/assets/images/jdlogo.gif",
-		"id": 3,
-		"job": "Data Scientist",
-		"category": "banking",
-		"company": "Tata Consultancy Services",
-		"time": "full time",
-		"locaton": "Pune",
-		"experience": "5-8 years",
-		"salary": "1800-2800",
-		"skills": [
-			"Data Science",
-			"Python",
-			"Machine Learning",
-			"R",
-			"Data Visualization"
-		],
-		"aboutpost": { "postedate": "2 days ago", "applied": 50, "seed": 35 },
-		"somepriority": ["early applicant", "quick apply"],
-		"jobDescription": [
-			{
-				"type": "bold",
-				"data": [
-					"Designation: Data Scientist",
-					"Role: Data Scientist",
-					"Years of Experience: 5 to 8 Years",
-					"Job Location: Pune",
-					"Must have skill",
-					"Roles & Responsibilities (As per Hiring Manager):",
-					"Data Analysis and Model Building"
-				]
-			},
-			{
-				"type": "ol",
-				"data": [
-					"Client interaction involved - Must have good Communication",
-					"Experience with data analysis and statistical modeling",
-					"Proficiency in Python and R",
-					"Knowledge of machine learning algorithms"
-				]
-			},
-			{
-				"type": "p",
-				"data": [
-					"About the Job",
-					"We are seeking a talented Data Scientist to join our team and work on innovative data-driven projects.",
-					"This role involves analyzing large datasets, building predictive models, and collaborating with various teams to implement data solutions.",
-					"Job Title",
-					"Data Scientist",
-					"Location",
-					"Pune",
-					"Educational Background",
-					"M. Sc. / Ph.D. in Data Science, Computer Science, or related field",
-					"Key Responsibilities",
-					"Analyze large datasets to extract insights and build predictive models.",
-					"Develop and implement machine learning algorithms.",
-					"Work closely with data engineers and analysts to develop data-driven solutions.",
-					"Conduct data visualization and present findings to stakeholders.",
-					"Stay up to date with"
 				]
 			}
 		]

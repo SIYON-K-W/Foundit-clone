@@ -193,7 +193,7 @@ function JobDescription() {
 										<li className="flex items-center gap-2 capitalize font-custom1">
 											<MdOutlineLocationOn className="text-base text-[#a5a3ae]" />
 											<p className="text-xs">
-												{element.locaton}
+												{element.location}
 											</p>
 										</li>
 										<li className="flex items-center gap-2 max-md:flex-col max-md:items-baseline">
