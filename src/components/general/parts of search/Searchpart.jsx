@@ -13,7 +13,7 @@ function Searchpart({ placeholding, read, clas, icon = true, inputcls }) {
 				<input
 					type="text"
 					placeholder={`${placeholding}`}
-					value={searchjob !== null && name ? searchjob : null}
+					value={searchjob && name ? searchjob : null}
 					className="h-full border-none outline-none w-full text-base font-custom1"
 					readOnly
 				/>
@@ -22,7 +22,7 @@ function Searchpart({ placeholding, read, clas, icon = true, inputcls }) {
 					type="text"
 					placeholder={`${placeholding}`}
 					onChange={(e) => setSearchJob(e.target.value)}
-					value={searchjob !== null && name ? searchjob : null}
+					value={searchjob && name ? searchjob : null}
 					required
 					className={`h-full border-none outline-none w-full text-base font-custom1 ${inputcls}`}
 				/>

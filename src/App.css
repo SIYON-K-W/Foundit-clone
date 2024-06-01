@@ -113,14 +113,15 @@
 .next.disabled a {
 	color: #a1a1a1;
 }
-.pages {
+
+.pages .pagelink {
 	color: #000;
 	font-family: poppinsregular;
 	border-radius: 3px;
 	font-size: 16px;
-	padding: 4px 18px;
+	padding: 6px 20px;
 }
-.pages.selected {
+.pages.selected .pagelink {
 	background-color: #6e00be;
 	color: #fff;
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import data from "../../../helpers/data.json";
 import { ImNewTab } from "react-icons/im";
 import { IoPaperPlaneOutline } from "react-icons/io5";
@@ -9,9 +9,13 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
 import { GrUserExpert } from "react-icons/gr";
 import { MdOutlineCalendarMonth } from "react-icons/md";
+import { IDcontext } from "../../../../App";
+import { Navigate, useNavigate } from "react-router-dom";
 
-function JobDescription({ id }) {
+function JobDescription() {
 	const [Jobdata, setJObData] = useState([]);
+	const { id } = useContext(IDcontext);
+	const navigate = useNavigate();
 	const handlescroll = () => {
 		const scrollableDiv = document.getElementById("scrollableDiv");
 		const description = document.getElementById("job description");
@@ -36,14 +40,16 @@ function JobDescription({ id }) {
 		});
 	};
 	useEffect(() => {
+		console.log(id);
 		try {
 			if (id) {
-				console.log("keri");
 				const filtereddata = data.filter(
 					(element) => element.id === id
 				);
 				console.log(filtereddata);
 				setJObData(filtereddata);
+			} else {
+				navigate("/Jobs");
 			}
 		} catch (error) {
 			console.log(error);
@@ -117,11 +123,13 @@ function JobDescription({ id }) {
 	return (
 		<div className="h-full border-[#f4f4f5] border-2 bg-white rounded-2xl w-full py-4">
 			<div className="flex gap-2 flex-col h-full">
-				{Jobdata ? (
-					Jobdata.map((element) => (
+				{Jobdata.length >= 1 ? (
+					Jobdata.map((element, ind) => (
 						<>
-							<div className="flex justify-between px-4">
-								<div className="flex items-center gap-3">
+							<div
+								className="flex justify-between px-4 max-2xl:flex-col max-2xl:gap-2"
+								key={ind}>
+								<div className="flex items-center gap-3 max-2xl:w-full">
 									{element.imgsource ? (
 										<div className="w-[50px] h-[50px] flex items-center bg-white border">
 											<h3>
@@ -135,7 +143,7 @@ function JobDescription({ id }) {
 									) : (
 										""
 									)}
-									<div>
+									<div className="w-[83%]">
 										<div className="flex items-center gap-1">
 											<h5 className="capitalize">
 												{element.job}
@@ -147,7 +155,7 @@ function JobDescription({ id }) {
 										</p>
 									</div>
 								</div>
-								<button className="h-[34px] w-[200px] flex items-center justify-center rounded-lg gap-1 text-white bg-[#6E00BE]">
+								<button className="h-[34px] w-[200px] max-2xl:w-full flex items-center justify-center rounded-lg gap-1 text-white bg-[#6E00BE]">
 									<IoPaperPlaneOutline />
 									<span className="font-custom1 capitalize text-xs">
 										quick apply
@@ -181,14 +189,14 @@ function JobDescription({ id }) {
 								id="scrollableDiv"
 								onScroll={handlescroll}>
 								<div className="py-4" id="highlights">
-									<ul className="border-[#d2d1d6] border rounded-t-lg px-7 py-5 flex flex-col items-start gap-2">
+									<ul className="border-[#d2d1d6] border max-md:px-4 max-md:py-4 rounded-t-lg px-7 py-5 flex flex-col items-start gap-2">
 										<li className="flex items-center gap-2 capitalize font-custom1">
 											<MdOutlineLocationOn className="text-base text-[#a5a3ae]" />
 											<p className="text-xs">
 												{element.locaton}
 											</p>
 										</li>
-										<li className="flex items-center gap-2">
+										<li className="flex items-center gap-2 max-md:flex-col max-md:items-baseline">
 											<div className="flex items-center gap-2 capitalize font-custom1">
 												<MdOutlineCalendarMonth className="text-sm text-[#a5a3ae]" />
 												<p className="text-xs">
@@ -197,7 +205,7 @@ function JobDescription({ id }) {
 											</div>
 											{element.salary ? (
 												<div className="flex items-center gap-2 capitalize font-custom1">
-													<span className="text-xs text-slate-300">
+													<span className="text-xs text-slate-300 max-md:hidden">
 														&#124;
 													</span>
 													<MdOutlineCurrencyRupee className="text-sm text-[#a5a3ae]" />
@@ -209,7 +217,7 @@ function JobDescription({ id }) {
 												""
 											)}
 										</li>
-										<li className="flex items-center gap-4">
+										<li className="flex items-center gap-4 max-md:flex-col max-md:gap-2 max-md:items-baseline">
 											<div className="flex items-center gap-2 font-custom1 text-[#a5a3ae]">
 												<MdOutlineAccessTime className="text-base" />
 												<span className="text-xs">
@@ -251,7 +259,9 @@ function JobDescription({ id }) {
 						</>
 					))
 				) : (
-					<div>sahufuhfuhyagziyg</div>
+					<div className="flex items-center justify-center h-screen">
+						no description
+					</div>
 				)}
 			</div>
 		</div>

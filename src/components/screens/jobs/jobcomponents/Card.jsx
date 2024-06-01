@@ -2,63 +2,18 @@ import React, { useContext, useEffect, useMemo, useState } from "react";
 import CardTop from "./cardparts/CardTop";
 import CardMiddle from "./cardparts/CardMiddle";
 import CardBottom from "./cardparts/CardBottom";
-import data from "../../../helpers/data.json";
 import { useNavigate, useParams } from "react-router-dom";
-import { useSearch } from "../../../context/SearchContext";
 import ReactPaginate from "react-paginate";
-import ReactDOM from "react-dom";
+import { IDcontext } from "../../../../App";
 
-function Card({ setID }) {
-	const [item, setItem] = useState([]);
-	const { cate } = useParams();
-	const { name } = useParams();
+function Card({ item }) {
 	const [itemOffset, setItemOffset] = useState(0);
 	const [currentItem, setCurrentItem] = useState([]);
 	const [pageCount, setPageCount] = useState();
 	const [windowwidth, setWindowWidth] = useState(window.innerWidth);
-	const { searchjob, type, Jobselect, setJobSelect, setSearchJob } =
-		useSearch();
+	const { setID } = useContext(IDcontext);
 	const navigate = useNavigate();
 	const itemsPerPage = 5;
-	useEffect(() => {
-		let filteredItems = [];
-		console.log("ind njnjjnjinijnijbniubib");
-		switch (type) {
-			case "search":
-				console.log("Filtering by name with type as search:", name);
-				filteredItems = data.filter((element) =>
-					element.job
-						.toLowerCase()
-						.replace(/\s/g, "")
-						.includes(searchjob.toLowerCase().replace(/\s/g, ""))
-				);
-				setJobSelect("");
-				setItem(filteredItems);
-				break;
-			case "sort":
-				console.log("Filtering by Jobselect:", Jobselect);
-				filteredItems = data.filter(
-					(element) =>
-						element.job.toLowerCase().replace(/\s/g, "") ===
-						Jobselect.toLowerCase().replace(/\s/g, "")
-				);
-				setSearchJob("");
-				setItem(filteredItems);
-				break;
-			case "category":
-				console.log("Filtering by category:", cate);
-				filteredItems = data.filter(
-					(element) =>
-						element.category.toLowerCase().replace(/\s/g, "") ===
-						cate.toLowerCase().replace(/\s/g, "")
-				);
-				setItem(filteredItems);
-				break;
-			default:
-				setItem(data);
-				break;
-		}
-	}, [Jobselect, name, cate]);
 	const handlethings = () => {
 		setWindowWidth(window.innerWidth);
 	};
@@ -102,11 +57,11 @@ function Card({ setID }) {
 			});
 			setID(parseInt(Cardarray[index].id));
 		} else {
-			setID(Cardarray[index].id);
-			navigate("/Jobdescripton");
+			setID(parseInt(Cardarray[index].id));
+			navigate("/Jobs/Jobdescripton");
 		}
 	};
-	useEffect(() => {
+	useMemo(() => {
 		const endOffset = itemOffset + itemsPerPage;
 		console.log(`Loading item from ${itemOffset} to ${endOffset}`);
 		const currentItems = item.slice(itemOffset, endOffset);
@@ -124,47 +79,53 @@ function Card({ setID }) {
 	};
 
 	return (
-		<div className="max-3xl:w-full 3xl:w-[42.2%] flex flex-col gap-5">
-			<div className="flex flex-col gap-5">
-				{currentItem.map((Element, index) => (
-					<div
-						id={Element.id}
-						key={Element.id}
-						className="py-5 flex flex-col border rounded-2xl shadow-md gap-[10px] card cursor-pointer"
-						onClick={() => handle(index)}>
-						<CardTop
-							imgsource={Element.imgsource}
-							job={Element.job}
-							company={Element.company}
-						/>
-						<hr className="border-t border-slate-100" />
-						<CardMiddle
-							time={Element.time}
-							locaton={Element.locaton}
-							experience={Element.experience}
-							skills={Element.skills}
-							salary={Element.salary}
-						/>
-						<hr className="border-t border-slate-100" />
-						<CardBottom
-							posted={Element.aboutpost}
-							somepriority={Element.somepriority}
-						/>
-					</div>
-				))}
+		<>
+			<div className="max-3xl:w-full 3xl:w-[42.2%] flex flex-col gap-5">
+				<div className="flex flex-col gap-5">
+					<p className="capitalize font-custom1 text-[#a5a3ae] text-sm">
+						showing {currentItem.length} results
+					</p>
+					{currentItem.map((Element, index) => (
+						<div
+							id={Element.id}
+							key={Element.id}
+							className="py-5 flex flex-col border rounded-2xl shadow-md gap-[10px] card cursor-pointer"
+							onClick={() => handle(index)}>
+							<CardTop
+								imgsource={Element.imgsource}
+								job={Element.job}
+								company={Element.company}
+							/>
+							<hr className="border-t border-slate-100" />
+							<CardMiddle
+								time={Element.time}
+								locaton={Element.locaton}
+								experience={Element.experience}
+								skills={Element.skills}
+								salary={Element.salary}
+							/>
+							<hr className="border-t border-slate-100" />
+							<CardBottom
+								posted={Element.aboutpost}
+								somepriority={Element.somepriority}
+							/>
+						</div>
+					))}
+				</div>
+				<ReactPaginate
+					breakLabel="..."
+					nextLabel=">"
+					onPageChange={handlePageClick}
+					pageRangeDisplayed={5}
+					pageCount={pageCount}
+					previousLabel="<"
+					renderOnZeroPageCount={null}
+					containerClassName="paginationcontain"
+					pageClassName="pages"
+					pageLinkClassName="pagelink"
+				/>
 			</div>
-			<ReactPaginate
-				breakLabel="..."
-				nextLabel=">"
-				onPageChange={handlePageClick}
-				pageRangeDisplayed={5}
-				pageCount={pageCount}
-				previousLabel="<"
-				renderOnZeroPageCount={null}
-				containerClassName="paginationcontain"
-				pageClassName="pages"
-			/>
-		</div>
+		</>
 	);
 }
 
