@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineCategory } from "react-icons/md";
 import { useSearch } from "../../../context/SearchContext";
 
-function JobNavbarpart({ cls, set }) {
+function JobNavbarpart({ cls, set, cstegory }) {
 	const { Jobselect, setJobSelect } = useSearch();
 	const Handlebox = () => {
 		const show = document.getElementsByClassName("hello")[0];
@@ -48,7 +48,9 @@ function JobNavbarpart({ cls, set }) {
 			<div className="wrapper">
 				<div className="flex items-center justify-evenly max-2xl:flex-col max-2xl:gap-2">
 					<div
-						className="w-[45%] max-2xl:w-full h-9 bg-white rounded-full pl-4 pr-2 py-2 border max-sm:pl-2 3xl:hidden"
+						className={`${
+							!cstegory ? "w-[45%]" : "w-full"
+						} max-2xl:w-full h-9 bg-white rounded-full pl-4 pr-2 py-2 border max-sm:pl-2 3xl:hidden`}
 						onClick={() => set(true)}>
 						<Searchpart
 							placeholding={"over 5,00,000+ jobs to explore"}
@@ -56,30 +58,34 @@ function JobNavbarpart({ cls, set }) {
 							clas={"max-sm:gap-2"}
 						/>
 					</div>
-					<div
-						className={`flex items-center justify-between h-full relative px-3 border rounded-full py-1 3xl:w-full max-3xl:w-[45%] max-2xl:w-full`}>
-						<MdOutlineCategory className="text-xl text-[#a59d9d]" />
-						<input
-							type="text"
-							placeholder="experience"
-							value={Jobselect ? Jobselect : "Jobs"}
-							id="inputcategory"
-							className="outline-none font-custom1 grow text-center"
-							onClick={Handlebox}
-							readOnly
-						/>
-						<IoIosArrowDown
-							id="arrows"
-							className="transition-transform text-xl text-[#a59d9d]"
-						/>
-						<ClickCategory
-							category={Jobselect}
-							setCategory={setJobSelect}
-							cls={"top-10 left-0"}
-							listcls={"text-center"}
-							data={jobs}
-						/>
-					</div>
+					{!cstegory ? (
+						<div
+							className={`flex items-center justify-between h-full relative px-3 border rounded-full py-1 3xl:w-full max-3xl:w-[45%] max-2xl:w-full`}>
+							<MdOutlineCategory className="text-xl text-[#a59d9d]" />
+							<input
+								type="text"
+								placeholder="experience"
+								value={Jobselect ? Jobselect : "Jobs"}
+								id="inputcategory"
+								className="outline-none font-custom1 grow text-center"
+								onClick={Handlebox}
+								readOnly
+							/>
+							<IoIosArrowDown
+								id="arrows"
+								className="transition-transform text-xl text-[#a59d9d]"
+							/>
+							<ClickCategory
+								category={Jobselect}
+								setCategory={setJobSelect}
+								cls={"top-10 left-0"}
+								listcls={"text-center"}
+								data={jobs}
+							/>
+						</div>
+					) : (
+						""
+					)}
 				</div>
 			</div>
 		</div>

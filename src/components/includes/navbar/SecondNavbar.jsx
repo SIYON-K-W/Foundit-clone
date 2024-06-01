@@ -7,7 +7,7 @@ import Navform from "../../screens/jobs/jobcomponents/Navform";
 import JobNavbarpart from "../../screens/jobs/jobcomponents/JobNavbarpart";
 import Allbox from "./Allbox";
 
-function SecondNavbar() {
+function SecondNavbar({ cstegory = false }) {
 	const [show, setShow] = useState(false);
 	const handleit = () => {
 		document.querySelector("body").style.overflow = "hidden";
@@ -35,7 +35,11 @@ function SecondNavbar() {
 						</div>
 					</div>
 					<div className="w-full h-px bg-slate-100"></div>
-					<JobNavbarpart cls={""} set={handleit} />
+					<JobNavbarpart
+						cls={""}
+						set={handleit}
+						cstegory={cstegory}
+					/>
 				</div>
 			</div>
 		</>
