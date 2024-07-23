@@ -70,7 +70,7 @@ function FooterRightPart() {
 									}>
 									<img
 										src="/src/assets/images/appstore.svg"
-										alt=""
+										alt="applestore"
 									/>
 								</Link>
 							</div>
@@ -83,7 +83,7 @@ function FooterRightPart() {
 									}>
 									<img
 										src="/src/assets/images/playstore.svg"
-										alt=""
+										alt="playstore"
 									/>
 								</Link>
 							</div>
