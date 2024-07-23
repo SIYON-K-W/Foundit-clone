@@ -79,7 +79,7 @@ function Job() {
 								<div className="flex flex-col gap-3">
 									<div>
 										<img
-											src="/src/assets/images/Frame.svg"
+											src="/src/assets/images/frame.svg"
 											alt="nosearchresults"
 										/>
 									</div>

@@ -1,6 +1,6 @@
 [
 	{
-		"imgsource": "/src/assets/images/sliderimage (1).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(1).jpeg",
 		"id": 1,
 		"job": "Loan Officer",
 		"company": "Bank of America",
@@ -62,7 +62,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (2).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(2).jpeg",
 		"id": 2,
 		"job": "Branch Manager",
 		"company": "Wells Fargo",
@@ -124,7 +124,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (3).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(3).jpeg",
 		"id": 3,
 		"job": "Investment Analyst",
 		"company": "Goldman Sachs",
@@ -190,7 +190,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (4).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(4).jpeg",
 		"id": 4,
 		"job": "Remote Customer Service Representative",
 		"company": "Amazon",
@@ -252,7 +252,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (5).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(5).jpeg",
 		"id": 5,
 		"job": "Freelance Writer",
 		"company": "Upwork",
@@ -314,7 +314,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (6).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(6).jpeg",
 		"id": 6,
 		"job": "Virtual Assistant",
 		"company": "Zirtual",
@@ -376,7 +376,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (7).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(7).jpeg",
 		"id": 7,
 		"job": "HR Manager",
 		"company": "Google",
@@ -438,7 +438,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (8).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(8).jpeg",
 		"id": 8,
 		"job": "Recruitment Specialist",
 		"company": "LinkedIn",
@@ -500,7 +500,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (1).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(1).jpeg",
 		"id": 9,
 		"job": "Employee Relations Consultant",
 		"company": "Microsoft",
@@ -562,7 +562,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (2).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(2).jpeg",
 		"id": 10,
 		"job": "Sales Representative",
 		"company": "Apple",
@@ -624,7 +624,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (3).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(3).jpeg",
 		"id": 11,
 		"job": "Account Executive",
 		"company": "Salesforce",
@@ -686,7 +686,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (4).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(4).jpeg",
 		"id": 12,
 		"job": "Business Development Manager",
 		"company": "IBM",
@@ -748,7 +748,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (5).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(5).jpeg",
 		"id": 13,
 		"job": "Accountant",
 		"company": "Deloitte",
@@ -810,7 +810,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (6).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(6).jpeg",
 		"id": 14,
 		"job": "Financial Analyst",
 		"company": "Goldman Sachs",
@@ -872,7 +872,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (7).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(7).jpeg",
 		"id": 15,
 		"job": "Tax Consultant",
 		"company": "PwC",
@@ -941,7 +941,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (8).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(8).jpeg",
 		"id": 16,
 		"job": "Customer Support Specialist",
 		"company": "Zendesk",
@@ -1003,7 +1003,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (1).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(1).jpeg",
 		"id": 17,
 		"job": "Technical Support Representative",
 		"company": "Microsoft",
@@ -1065,7 +1065,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (2).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(2).jpeg",
 		"id": 18,
 		"job": "Help Desk Analyst",
 		"company": "Google",
@@ -1127,7 +1127,7 @@
 		]
 	},
 	{
-		"imgsource": "/src/assets/images/sliderimage (3).jpeg",
+		"imgsource": "/src/assets/images/sliderimage(3).jpeg",
 		"id": 19,
 		"job": "Software Developer",
 		"company": "Facebook",
