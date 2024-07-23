@@ -53,20 +53,25 @@ function LoginFooter() {
 					</Link>
 				</li>
 				<li className="flex items-center gap-3">
-					<Link>
+					<Link
+						target="blank"
+						to={"https://www.facebook.com/founditIN/"}>
 						<MdFacebook className="text-3xl text-[#3c3c3c]" />
 					</Link>
-					<Link>
+					<Link
+						target="blank"
+						to={"https://twitter.com/foundit_India"}>
 						<FaTwitterSquare className="text-3xl text-[#3c3c3c]" />
 					</Link>
-					<Link>
+					<Link
+						target="blank"
+						to={"https://www.linkedin.com/company/foundit-jobs/"}>
 						<FaLinkedin className="text-3xl text-[#3c3c3c]" />
 					</Link>
-					<Link>
+					<Link
+						target="blank"
+						to={"https://www.instagram.com/foundit_india/"}>
 						<FaInstagram className="text-3xl text-[#3c3c3c]" />
-					</Link>
-					<Link>
-						<FaYoutube className="text-3xl text-[#3c3c3c]" />
 					</Link>
 				</li>
 			</ul>

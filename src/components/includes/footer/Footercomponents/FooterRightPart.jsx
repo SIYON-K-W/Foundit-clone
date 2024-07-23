@@ -64,7 +64,10 @@ function FooterRightPart() {
 							<div>
 								<Link
 									className="hover:underline decoration-1"
-									to={"/"}>
+									target="_blank"
+									to={
+										"https://apps.apple.com/in/app/monster-jobs/id525775161"
+									}>
 									<img
 										src="/src/assets/images/appstore.svg"
 										alt=""
@@ -74,7 +77,10 @@ function FooterRightPart() {
 							<div>
 								<Link
 									className="hover:underline decoration-1"
-									to={"/"}>
+									target="_blank"
+									to={
+										"https://play.google.com/store/apps/details?id=com.monsterindia.seeker.views"
+									}>
 									<img
 										src="/src/assets/images/playstore.svg"
 										alt=""

@@ -7,7 +7,6 @@ import Bottomenu from "../home/_components/Bottomenu";
 import { useLog } from "../../context/Logincontext";
 function Login() {
 	const { logined } = useLog();
-
 	return (
 		<>
 			<Bottomenu />

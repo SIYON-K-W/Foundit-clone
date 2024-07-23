@@ -65,7 +65,7 @@ function ClickCategory({ category, setCategory, cls, listcls, data }) {
 				? data.map((element, index) => (
 						<li
 							key={index}
-							className={`whitespace-nowrap capitalize pl-4 rounded py-2 text-sm font-thin font-custom1 hover:text-purple-700 hover:bg-purple-100 block ${listcls} pl-20`}
+							className={`whitespace-nowrap capitalize pl-4 rounded py-2 text-sm font-thin font-custom1 hover:text-purple-700 hover:bg-purple-100 block ${listcls} pl-20 cursor-pointer`}
 							onClick={() => handle(element)}>
 							{element}
 						</li>
@@ -73,7 +73,7 @@ function ClickCategory({ category, setCategory, cls, listcls, data }) {
 				: yearsOfExperience.map((element, index) => (
 						<li
 							key={index}
-							className="whitespace-nowrap capitalize pl-2.5 rounded pr-12 py-2 text-sm font-thin font-custom1 hover:text-purple-700 hover:bg-purple-100 block"
+							className="whitespace-nowrap capitalize pl-2.5 rounded pr-12 py-2 text-sm font-thin font-custom1 hover:text-purple-700 hover:bg-purple-100 block cursor-pointer"
 							onClick={() => handle(element)}>
 							{element}
 						</li>

@@ -103,7 +103,7 @@ function LoginForm() {
 				</button>
 				<button
 					type="submit"
-					className="capitalize bg-[#6e00be] text-white rounded py-4 cursor-auto">
+					className="capitalize bg-[#6e00be] text-white rounded py-4 cursor-pointer">
 					login
 				</button>
 				<button className="font-custom1 text-[#6e00be] capitalize text-sm py-2">
