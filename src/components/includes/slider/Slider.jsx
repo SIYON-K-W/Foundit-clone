@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { RiArrowLeftSLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function SampleNextArrow(props) {
 	const { className, style, onClick } = props;
@@ -70,7 +71,9 @@ function CustomArrows({ imgsource }) {
 			<Slider {...settings}>
 				{imgsource.map((Element) => (
 					<div className="max-w-24">
-						<img src={Element} alt="company logo" />
+						<Link to={"/"}>
+							<img src={Element} alt="company logo" />
+						</Link>
 					</div>
 				))}
 			</Slider>
