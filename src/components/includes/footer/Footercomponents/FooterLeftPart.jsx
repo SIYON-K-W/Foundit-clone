@@ -107,7 +107,7 @@ function FooterLeftPart() {
 				<li className="flex items-center justify-between w-full pt-4 cursor-pointer flex-wrap gap-3">
 					<Link
 						className={
-							"captitalize text-white text-base font-custom1"
+							"text-white text-base font-custom1 capitalize"
 						}>
 						career tips
 					</Link>
