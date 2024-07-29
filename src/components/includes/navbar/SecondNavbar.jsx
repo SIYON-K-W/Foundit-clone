@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import NavLeft from "./NavLeft";
-import Navright from "./Navright";
+import NavbarLeftPart from "./NavbarLeftPart";
+import NavbaRightPart from "./NavbaRightPart";
 import List from "./List";
 import Logo from "./Logo";
 import Navform from "../../screens/jobs/jobcomponents/Navform";
@@ -31,7 +31,7 @@ function SecondNavbar({ cstegory = false }) {
 								<List set={true} clas={"max-3xl:hidden"} />
 							</div>
 							<Navform />
-							<Navright regcol={"text-[#9a10bd]"} />
+							<NavbaRightPart regcol={"text-[#9a10bd]"} />
 						</div>
 					</div>
 					<div className="w-full h-px bg-slate-100"></div>

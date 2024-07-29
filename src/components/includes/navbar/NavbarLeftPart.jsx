@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import List from "./List";
 
-function NavLeft() {
+function NavbarLeftPart() {
 	return (
 		<div className="flex gap-4 items-center">
 			<Logo />
@@ -11,4 +11,4 @@ function NavLeft() {
 	);
 }
 
-export default NavLeft;
+export default NavbarLeftPart;

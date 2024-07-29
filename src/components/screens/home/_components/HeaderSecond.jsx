@@ -3,7 +3,7 @@ import Maindata from "../../../general/navbar/Maindata";
 import Searchpart from "../../../general/parts of search/Searchpart";
 import Allbox from "../../../includes/navbar/Allbox";
 
-function Header2({ isfixed, item, settheitem }) {
+function HeaderSecond({ isfixed, item, settheitem }) {
 	return (
 		<div className="fixed w-full shadow-xl z-50 4xl:hidden">
 			{isfixed && !item ? (
@@ -30,4 +30,4 @@ function Header2({ isfixed, item, settheitem }) {
 	);
 }
 
-export default Header2;
+export default HeaderSecond;

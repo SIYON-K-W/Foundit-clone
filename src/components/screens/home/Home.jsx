@@ -6,7 +6,7 @@ import OurResourse from "./_components/OurResourse";
 import PopularCategories from "./_components/PopularCategories";
 import Advertisement from "./_components/Advertisement";
 import MainFooter from "../../includes/footer/MainFooter";
-import Header2 from "./_components/header2";
+import HeaderSecond from "./_components/HeaderSecond";
 import Bottomenu from "./_components/Bottomenu";
 
 function Home() {
@@ -36,7 +36,7 @@ function Home() {
 	}, []);
 	return (
 		<>
-			<Header2
+			<HeaderSecond
 				isfixed={isfixed}
 				item={item}
 				settheitem={{ removehandleit, handleit }}

@@ -4,7 +4,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { useLog } from "../../context/Logincontext";
 import LogoutButton from "../../general/button/LogoutButton";
-function Navright({ regcol }) {
+function NavbaRightPart({ regcol }) {
 	const { logined } = useLog();
 	return (
 		<>
@@ -54,4 +54,4 @@ function Navright({ regcol }) {
 	);
 }
 
-export default Navright;
+export default NavbaRightPart;
